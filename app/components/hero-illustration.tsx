@@ -134,7 +134,7 @@ export const HeroIllustration = () => {
           height={100}
           width={100}
           alt='Hero notification widget'
-          className='absolute right-96 top-24 scale-50'
+          className='absolute right-[28rem] top-8 scale-50 shadow-xl shadow-green-400/20'
         />
       </picture>
       <picture>

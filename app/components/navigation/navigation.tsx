@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-
+import { HiDownload } from 'react-icons/hi'
 import { Logo } from '@components/logo'
 import { linkVariants, navVariants } from '@components/navigation'
 import { ThemeToggleButton } from '@components/theme-toggle-button'
@@ -35,6 +35,14 @@ export function Navigation() {
         <AnimatedLink href='/#contact' variants={linkVariants}>
           Contact
         </AnimatedLink>
+
+        <a
+          className='group bg-[#352d39] text-white text-xs px-3 py-2 flex items-center gap-2 rounded-lg outline-none focus:scale-95 hover:scale-95 active:scale-95 transition cursor-pointer border-black dark:bg-white/10'
+          href='/assets/LarryLy-Dev-CV.pdf'
+          download
+        >
+          Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 transition' />
+        </a>
 
         <motion.div variants={linkVariants}>
           <ThemeToggleButton />

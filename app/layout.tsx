@@ -1,10 +1,7 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
-
 import localFont from 'next/font/local'
-
 import clsx from 'clsx'
-import { getAge } from '@utils/get-age'
 import { Kanit } from 'next/font/google'
 import { Footer } from '@components/footer'
 import { MobileNav } from '@components/mobile-navigation'
@@ -45,7 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en' className='scroll-p-32 scroll-smooth' suppressHydrationWarning>
       <body
         className={clsx(
-          'dark:bg-radial bg-powder text-dark-600 font-epilogue dark:text-dark-50 ',
+          'dark:bg-radial bg-powder text-[#352d39] font-epilogue dark:text-dark-50 ',
           epilogue.className,
           kanit.className
         )}

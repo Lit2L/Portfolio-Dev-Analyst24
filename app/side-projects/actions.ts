@@ -18,7 +18,7 @@ export async function getProjects() {
   const sideProjects: Sideproject[] = [
     {
       id: 0,
-      name: 'use-scrollspy',
+      name: 'Cinematica',
       area: 'React Hook',
       image: 'https://mj-gallery.com/6c010f60-f86b-4a99-84b0-b98177497205/grid_0.png',
       imageAlt: 'scrollspy hook by Larry Ly',
@@ -28,8 +28,8 @@ export async function getProjects() {
     },
     {
       id: 1,
-      name: 'Poimandres.nvim',
-      area: 'Neovim Plugin',
+      name: 'X-Men University Reviews',
+      area: 'Frontend Mentor Challenge',
       image:
         'https://user-images.githubusercontent.com/47901349/180445055-92480553-0652-4155-8d41-835fec27245b.png',
       imageAlt: 'Poimandres Neovim color scheme by Larry Ly',
@@ -38,13 +38,24 @@ export async function getProjects() {
       color: '#23393D',
     },
     {
+      id: 2,
+      name: 'Rent My Tent',
+      area: 'WezTerm Color Scheme',
+      image:
+        'https://user-images.githubusercontent.com/47901349/179416018-ba8e24a6-3590-4eff-93cb-806d41378a0d.png',
+      imageAlt: 'Poimandres WezTerm color scheme by Larry Ly',
+      repo: 'larryly/poimandres-wezterm',
+      url: 'https://github.com/larryly/poimandres-wezterm',
+      color: '#23393D',
+    },
+    {
       id: 3,
-      name: 'Modern Monokai',
+      name: 'Are You A CatBear?',
       area: 'VSCode Color Scheme',
       image: 'https://github.com/larryly/modern-monokai/raw/master/assets/screen1.png',
       imageAlt: 'Modern Monokai color scheme by Larry Ly',
       repo: 'larryly/modern-monokai',
-      url: 'https://marketplace.visualstudio.com/items?itemName=LarryLy.modern-monokai',
+      url: 'https://marketplace.visualstudio.com/items?itemName=larryly.modern-monokai',
       color: '#292E36',
     },
   ]

@@ -21,7 +21,7 @@ export const LinkButton = forwardRef<HTMLAnchorElement, LinkButtonProps>(functio
       ref={ref}
       {...rest}
       className={clsx(
-        'group flex gap-3 text-3xl font-light text-dark-400 transition duration-300 ease-in-out hover:text-[#6D435A] dark:text-dark-200 hover:translate-y-1 ',
+        'group flex gap-3 text-3xl font-light text-dark-400 transition duration-300 ease-in-out hover:text-[#6D435A] dark:text-dark-200 translate-y-0 hover:translate-y-1 ',
         rest.className
       )}
     >
@@ -29,7 +29,7 @@ export const LinkButton = forwardRef<HTMLAnchorElement, LinkButtonProps>(functio
       {Icon ?? (
         <VscArrowRight
           size={36}
-          className='rotate-45 text-dark-200 transition duration-300 ease-in-out group-hover:translate-x-1 group-hover:translate-y-1 group-hover:text-[#352d39] dark:text-dark-400'
+          className='rotate-45 text-dark-200 transition duration-300 ease-in-out group-hover:translate-y-1 group-hover:text-[#352d39] dark:text-dark-400'
         />
       )}
     </Link>
