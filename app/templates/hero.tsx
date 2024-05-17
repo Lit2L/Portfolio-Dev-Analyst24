@@ -10,7 +10,7 @@ export const Hero = () => {
   return (
     <header
       id='intro'
-      className='pt-40 pb-80 shadow-[inset_0_-40px_15px_-10px_#ededed] transition duration-300 ease-in-out dark:shadow-[inset_0_-40px_15px_-10px_#171717] md:bg-auto lg:pt-48 lg:pb-64 xl:py-80 overflow-hidden'
+      className='shadow-[inset_0_-40px_15px_-10px_#ededed] dark:shadow-[inset_0_-40px_15px_-10px_#171717] md:bg-auto overflow-hidden h-[750px]'
     >
       <motion.section
         variants={{
@@ -21,52 +21,53 @@ export const Hero = () => {
         whileInView='visible'
         exit='hidden'
         viewport={{ once: true }}
-        className='container relative'
+        className='container relative text-center md:text-left ease-in-out duration-300 transition-all flex flex-col justify-evenly'
       >
-        <AnimatePresence>
-          <article className='lg:max-w-[60%]'>
-            <AnimatedLetters
-              as='h1'
-              text='Larry Ly'
-              className='text-3xl font-bold md:text-5xl lg:text-7xl tracking-wider'
-              textVariants={{
-                hidden: { transition: { staggerChildren: 0.015 } },
-                visible: { transition: { staggerChildren: 0.015 } },
-              }}
-              letterVariants={{
-                hidden: { opacity: 0, y: 75 },
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                  transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.5 },
+        <div className='flex flex-col justify-center sm:justify-start md:translate-y-40'>
+          <AnimatePresence>
+            <article className='lg:max-w-[60%]'>
+              <AnimatedLetters
+                as='h1'
+                text='Larry Ly'
+                className='text-5xl font-bold md:text-6xl lg:text-7xl tracking-wider text-center md:text-left dark:text-[#f7f7f7] text-[#352D39]'
+                textVariants={{
+                  hidden: { transition: { staggerChildren: 0.015 } },
+                  visible: { transition: { staggerChildren: 0.015 } },
+                }}
+                letterVariants={{
+                  hidden: { opacity: 0, y: 75 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.5 },
+                  },
+                }}
+              />
+              <AnimatedText
+                as='p'
+                className='mt-1 text-lg font-medium leading-relaxed text-dark-400 dark:text-dark-300 text-center md:text-left'
+                text='Front-End Developer & Data Analyst'
+              />
+            </article>
+
+            <MotionLinkButton
+              href='#projects'
+              motionProps={{
+                variants: {
+                  hidden: { opacity: 0, y: 50 },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { ease: 'circOut', duration: 0.5 },
+                  },
                 },
               }}
-            />
-            <AnimatedText
-              as='p'
-              className='mt-1 text-lg font-medium leading-relaxed text-dark-400 dark:text-dark-300'
-              text='Front-End Developer & Data Analyst '
-            />
-          </article>
-        </AnimatePresence>
-
-        <MotionLinkButton
-          href='#projects'
-          motionProps={{
-            variants: {
-              hidden: { opacity: 0, y: 50 },
-              visible: {
-                opacity: 1,
-                y: 0,
-                transition: { ease: 'circOut', duration: 0.5 },
-              },
-            },
-          }}
-          className='mt-8 inline-block md:mt-16'
-        >
-          Explore my projects
-        </MotionLinkButton>
-
+              className='mt-8 inline-block md:mt-16 mx-auto md:mx-0'
+            >
+              Explore my projects
+            </MotionLinkButton>
+          </AnimatePresence>
+        </div>
         <HeroIllustration />
       </motion.section>
     </header>

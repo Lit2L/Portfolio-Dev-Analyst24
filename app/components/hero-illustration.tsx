@@ -48,6 +48,10 @@ const imageMap = {
       webp: '/assets/hero-louvair-widget.webp',
       png: '/assets/hero-louvair-widget.png',
     },
+    iyamWidget: {
+      webp: '/assets/hero-iyam-widget.webp',
+      png: '/assets/hero-iyam-widget.png',
+    },
   },
   light: {
     base: { webp: '/assets/hero-base-light.webp', png: '/assets/hero-base-light.png' },
@@ -67,6 +71,10 @@ const imageMap = {
       webp: '/assets/hero-louvair-widget.webp',
       png: '/assets/hero-louvair-widget.png',
     },
+    iyamWidget: {
+      webp: '/assets/hero-iyam-widget.webp',
+      png: '/assets/hero-iyam-widget.png',
+    },
   },
 }
 
@@ -80,7 +88,7 @@ export const HeroIllustration = () => {
   if (!mounted) return null
 
   return (
-    <section className='z-[-10] absolute scale-[0.6] -bottom-[38rem] right-[50%] translate-x-[50%] md:translate-x-0 md:scale-[0.8] md:bottom-auto md:top-52 md:-right-40 lg:-right-36 lg:top-16 xl:-top-24 xl:-right-20 2xl:-right-16 lg:scale-100'>
+    <section className='z-[-10] absolute scale-[0.6] top-28 right-[50%] translate-x-[50%] md:translate-x-0 md:scale-[0.8] md:top-10 md:-right-40 lg:-right-36 lg:-top-10 xl:-top-10 xl:-right-20 2xl:-right-16 '>
       <picture>
         <source type='image/webp' srcSet={image.base.webp} />
         <source type='image/png' srcSet={image.base.png} />
@@ -126,7 +134,7 @@ export const HeroIllustration = () => {
           height={100}
           width={100}
           alt='Hero notification widget'
-          className='absolute right-96 top-24'
+          className='absolute right-96 top-24 scale-50'
         />
       </picture>
       <picture>
@@ -150,12 +158,12 @@ export const HeroIllustration = () => {
           height={120}
           width={120}
           alt='Hero big widget'
-          className='absolute left-[8rem] top-[28rem]'
+          className='absolute left-[8rem] top-[28rem] shadow-lg shadow-yellow-300'
         />
       </picture>
-      {/* <picture>
-        <source type='image/webp' srcSet={image.profileWidget.webp} />
-        <source type='image/png' srcSet={image.profileWidget.png} />
+      <picture>
+        <source type='image/webp' srcSet={image.iyamWidget.webp} />
+        <source type='image/png' srcSet={image.iyamWidget.png} />
         <MotionImage
           variants={bigWidgetVariants}
           initial='hidden'
@@ -169,14 +177,14 @@ export const HeroIllustration = () => {
             repeatType: 'reverse',
             repeatDelay: 8,
           }}
-          src={image.profileWidget.png}
+          src={image.iyamWidget.png}
           loading='lazy'
           height={120}
           width={120}
           alt='Hero big widget'
-          className='absolute right-[8rem] top-[8.25rem]'
+          className='absolute right-[8rem] top-[8.25rem] shadow-lg shadow-cyan-500'
         />
-      </picture> */}
+      </picture>
       <picture>
         <source type='image/webp' srcSet={image.hippoWidget.webp} />
         <source type='image/png' srcSet={image.hippoWidget.png} />
@@ -198,7 +206,7 @@ export const HeroIllustration = () => {
           height={120}
           width={120}
           alt='Hero like widget'
-          className='absolute right-[8rem] top-[28rem]'
+          className='absolute right-[8rem] top-[28rem] shadow-lg shadow-purple-400'
         />
       </picture>
     </section>

@@ -30,7 +30,7 @@ module.exports = {
         padding: '1rem',
       },
       backgroundImage: {
-        powder: 'radial-gradient(circle, #181818, #FFFFFA)',
+        powder: 'radial-gradient(circle, #1D1F20, #f7f7f7)',
         radial: 'radial-gradient(circle, #173B4F, #1D1F20, #181818)',
         conic: 'conic-gradient(from 180deg at 50% 50%, #181818, #1C475F)',
       },
@@ -39,5 +39,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')({ nocompatible: true })],
 }

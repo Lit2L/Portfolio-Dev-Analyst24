@@ -42,7 +42,7 @@ export const About = () => {
       >
         <AnimatedText
           as='p'
-          className='col-span-full text-dark-400 dark:text-dark-100 md:col-span-6 xl:col-span-8 text-lg font-light leading-relaxed'
+          className='col-span-full text-dark-400 dark:text-dark-100 md:col-span-6 xl:col-span-8 text-lg font-bold leading-relaxed'
           text='Always working on something, Always a work in progress.'
         />
         {/* <MotionLinkButton */}
@@ -82,7 +82,9 @@ export const About = () => {
             />
             <AnimatedText
               as='p'
-              text="This past year I've front-end design have been my main focus this past year. dI love products that are thoughtfully crafted with the users experience in mind and my goal is to provide the same."
+              text='This past year my focus has been on front-end design and development.
+Before that, I was a data analyst with over 8 professional years of experience.
+              I love products that are thoughtfully crafted with the users experience in mind and my goal is to provide the same.'
               className='text-dark-400 dark:text-dark-200 mt-6 text-lg font-light leading-relaxed'
             />
           </motion.article>

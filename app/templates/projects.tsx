@@ -28,7 +28,7 @@ export const Projects = () => {
       >
         <AnimatedText
           as='p'
-          className='col-span-full text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200 md:col-span-6 xl:col-span-8'
+          className='col-span-full text-lg font-semibold leading-relaxed text-dark-400 dark:text-dark-200 md:col-span-6 xl:col-span-8'
           text='My Recent Works'
         />
 

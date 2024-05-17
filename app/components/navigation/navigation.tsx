@@ -16,7 +16,7 @@ export function Navigation() {
       variants={navVariants}
       initial='hidden'
       animate='visible'
-      className='container fixed inset-x-0 top-0 z-50 hidden h-32 w-full items-center justify-between md:flex'
+      className='container fixed inset-x-0 top-0 z-50 hidden w-full items-center justify-between md:flex'
     >
       <AnimatedLink href='/#' variants={linkVariants} className=''>
         <Logo />

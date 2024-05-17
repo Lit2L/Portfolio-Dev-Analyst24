@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --raisin: '#352d39';
+}
 @layer base {
   body {
     font-family:
@@ -25,11 +28,14 @@
 }
 
 @layer components {
+  .smooth {
+    @apply transition-all duration-300 ease-in-out;
+  }
   .nav-link {
-    @apply relative text-base font-light text-dark-400 hover:text-dark-500 dark:text-dark-300 dark:hover:text-dark-200;
+    @apply relative text-base font-bold text-dark-400 hover:text-dark-500 dark:text-dark-300 dark:hover:text-dark-200;
   }
   .mobile-nav-link {
-    @apply relative text-2xl font-light text-dark-400 hover:text-dark-500 dark:text-dark-200 dark:hover:text-dark-100;
+    @apply relative text-2xl font-bold text-dark-400 hover:text-dark-500 dark:text-dark-200 dark:hover:text-dark-100;
   }
   .nav-link::before,
   .mobile-nav-link::before {
@@ -40,5 +46,14 @@
   .mobile-nav-link:hover::before,
   .active-nav-link::before {
     @apply origin-left scale-x-100;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #2b3748;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background-color: #1a202c;
   }
 }

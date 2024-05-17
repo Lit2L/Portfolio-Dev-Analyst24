@@ -6,8 +6,10 @@ import { Projects } from '@templates/projects'
 
 export default function HomePage() {
   return (
-    <main>
-      <Hero />
+    <main className='scrollbar-thin overflow-y-scroll scrollbar-thumb-900 scrollbar-track-gray-100'>
+      <div className='mt-12'>
+        <Hero />
+      </div>
       <Projects />
       <About />
       <ContactShell>

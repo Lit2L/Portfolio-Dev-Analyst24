@@ -9,8 +9,9 @@ import { Kanit } from 'next/font/google'
 import { Footer } from '@components/footer'
 import { MobileNav } from '@components/mobile-navigation'
 import { Navigation } from '@components/navigation'
-import '../styles/tailwind.css'
-import './globals.css'
+import './styles/globals.css'
+import './styles/tailwind.css'
+
 import { Providers } from '@providers'
 
 const epilogue = localFont({
@@ -33,6 +34,7 @@ const kanit = Kanit({
   weight: ['200', '400', '600', '700', '800', '900'],
   display: 'swap',
 })
+
 export const metadata: Metadata = {
   title: 'Larry Ly - Frontend developer',
   description: `I'm a self-taught designer & frontend developer, focused on user experience, accessibility and modern web technologies.`,
@@ -43,7 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en' className='scroll-p-32 scroll-smooth' suppressHydrationWarning>
       <body
         className={clsx(
-          'dark:bg-radial bg-conic text-dark-600 transition-colors duration-300 ease-in-out dark:text-dark-50',
+          'dark:bg-radial bg-powder text-dark-600 font-epilogue dark:text-dark-50 ',
           epilogue.className,
           kanit.className
         )}
@@ -51,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Providers>
           <Navigation />
           <MobileNav />
-          {children}
+          <div className=''>{children}</div>
           <Analytics />
           <Footer />
         </Providers>

@@ -22,7 +22,7 @@ export function SideProjectsShell({ children }: { children: ReactNode }) {
             key='title'
             as='h1'
             text='Side Projects'
-            className='text-4xl font-medium lg:text-5xl'
+            className='text-4xl font-bold lg:text-5xl'
             textVariants={{
               hidden: { transition: { staggerChildren: 0.015 } },
               visible: { transition: { staggerChildren: 0.015 } },
@@ -39,8 +39,8 @@ export function SideProjectsShell({ children }: { children: ReactNode }) {
           <AnimatedText
             key='text'
             as='p'
-            className='mt-6 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200 md:w-3/5'
-            text='This is where I keep my side projects. This is where I color outside the lines and play around with new ideas and concepts.'
+            className='mt-6 text-lg font-bold leading-relaxed text-dark-400 dark:text-dark-200 md:w-3/5'
+            text='Side Projects, Prototypes, and Experiments'
           />
         </AnimatePresence>
       </motion.article>

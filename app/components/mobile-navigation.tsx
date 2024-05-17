@@ -73,8 +73,10 @@ export function MobileNav() {
 
   return (
     <>
-      <Link href='/#' className='fixed top-8 left-4 z-30 md:hidden'>
-        <Logo />
+      <Link href='/#' className='fixed top-6 h-20 left-2 z-30 md:hidden'>
+        <div className='h-12 w-12'>
+          <Logo />
+        </div>
       </Link>
 
       <button
@@ -127,8 +129,11 @@ export function MobileNav() {
             initial='hidden'
             animate='visible'
             exit='hidden'
-            className='fixed inset-y-0 right-0 z-20 flex w-9/12 flex-col bg-dark-100 px-12 transition-colors dark:bg-dark-700 md:hidden h-full flex-wrap items-start justify-center gap-y-14'
+            className='fixed inset-y-0 right-0 z-20 flex w-11/12 flex-col bg-dark-100 px-12 transition-colors dark:bg-dark-700 md:hidden h-full flex-wrap items-start justify-center gap-y-14'
           >
+            <motion.div variants={linkVariants}>
+              <ThemeToggleButton />
+            </motion.div>
             <MotionLink href='/#intro' variants={linkVariants} className='mobile-nav-link'>
               Introduction
             </MotionLink>
@@ -141,9 +146,6 @@ export function MobileNav() {
             <MotionLink href='/#contact' variants={linkVariants} className='mobile-nav-link'>
               Contact
             </MotionLink>
-            <motion.div variants={linkVariants}>
-              <ThemeToggleButton />
-            </motion.div>
           </motion.nav>
         )}
       </AnimatePresence>
