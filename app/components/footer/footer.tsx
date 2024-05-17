@@ -15,7 +15,7 @@ export function Footer() {
     >
       <section className='flex w-1/2 gap-8 md:gap-12 text-xl'>
         <motion.a
-          href='https://github.com/larryly'
+          href='https://github.com/lit2l'
           target='_blank'
           rel='noreferrer'
           variants={footerItemVariants}
@@ -24,7 +24,7 @@ export function Footer() {
           Github
         </motion.a>
         <motion.a
-          href='https://dribbble.com/oliver'
+          href='https://dribbble.com/lit2l'
           target='_blank'
           rel='noreferrer'
           variants={footerItemVariants}
@@ -33,7 +33,7 @@ export function Footer() {
           Dribbble
         </motion.a>
         <motion.a
-          href='https://www.linkedin.com/in/larryly/'
+          href='https://www.linkedin.com/in/larry-ly/'
           target='_blank'
           rel='noreferrer'
           variants={footerItemVariants}
