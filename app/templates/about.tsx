@@ -86,7 +86,7 @@ export const About = () => {
             />
             <AnimatedText
               as='p'
-              text="Although transitioning a career, learning computer science and learning to code has been challenging, I've never experienced more growth and enthusiasm while learning a new skill.  I don't like ceilings and this field I don't see any.  Thanks for visiting, I'm looking forward to tackling more challenges and delivering better and better applications."
+              text="The journey through learning to code has helped me grow in every part of my life. I'm looking forward to tackling more challenges and delivering better and better applications. Thanks for visiting"
               className='text-dark-400 dark:text-dark-200 mt-6 text-lg font-light leading-relaxed'
             />
           </motion.article>
