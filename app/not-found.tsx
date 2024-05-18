@@ -21,7 +21,7 @@ export default function NotFound() {
           <AnimatedLetters
             key='title'
             as='h2'
-            text="That's awkward... I couldn't find that page."
+            text='A deeper dive is in the works'
             className='text-4xl font-medium lg:text-5xl'
             textVariants={{
               hidden: { transition: { staggerChildren: 0.015 } },
@@ -40,7 +40,7 @@ export default function NotFound() {
             key='text'
             as='p'
             className='mt-6 text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200 md:w-3/5'
-            text="Maybe this page used to exist, is under development or maybe you typed in the wrong URL. Either way, I'm sorry for the inconvenience."
+            text='A deep dive for this project is coming soon.'
           />
 
           <MotionLinkButton

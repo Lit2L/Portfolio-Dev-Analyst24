@@ -14,7 +14,6 @@ import {
 import { AnimatedText } from '@components/animated-text'
 import { SectionHeader } from '@components/section-header'
 import { SectionShell } from '@components/section-shell'
-import { getAge } from '@utils/get-age'
 import Image from 'next/image'
 import { useMounted } from '@hooks/use-mounted'
 import { useTheme } from '@hooks/use-theme'
@@ -77,14 +76,17 @@ export const About = () => {
             />
             <AnimatedText
               as='p'
-              text="My name is Larry Ly and I'm a self-taught developer."
+              text="I'm Larry and I'm a self-taught applications developer with a background in data analytics."
               className='text-dark-400 dark:text-dark-200 mt-6 text-lg font-light leading-relaxed'
             />
             <AnimatedText
               as='p'
-              text='This past year my focus has been on front-end design and development.
-Before that, I was a data analyst with over 8 professional years of experience.
-              I love products that are thoughtfully crafted with the users experience in mind and my goal is to provide the same.'
+              text="I started out my career packaging envelopes for an escrow company.  It's been over a decade since those days and I've worked as a data analyst for large companies like First American Title and Zillow Group.  For the past two years I've dedicated all my time learning computer science and delivering web applications for clients."
+              className='text-dark-400 dark:text-dark-200 mt-6 text-lg font-light leading-relaxed'
+            />
+            <AnimatedText
+              as='p'
+              text="Although transitioning a career, learning computer science and learning to code has been challenging, I've never experienced more growth and enthusiasm while learning a new skill.  I don't like ceilings and this field I don't see any.  Thanks for visiting, I'm looking forward to tackling more challenges and delivering better and better applications."
               className='text-dark-400 dark:text-dark-200 mt-6 text-lg font-light leading-relaxed'
             />
           </motion.article>
