@@ -38,15 +38,16 @@ export const About = () => {
         whileInView='visible'
         exit='hidden'
         viewport={{ once: true }}
-        className='flex px-3 mt-12 justify-start smooth items-center'
+        className='flex px-6 mt-12 justify-start smooth items-center relative'
       >
-        <Minus className='ml-12' size={40} />
+        {/* <Minus className='ml-12' size={24} /> */}
+        <Quote size={36} className='ml-3 sm:ml-12' />
         <AnimatedText
           as='p'
           className='text-dark-400 dark:text-dark-200  text-lg font-bold leading-relaxed px-6 '
-          text='Always working on something, Always a work in progress.'
+          text='Becoming is better than being.'
         />
-
+        <Quote size={36} className='' />
         {/* <MotionLinkButton */}
         {/*   href='/about' */}
         {/*   motionProps={{ */}
@@ -83,12 +84,12 @@ export const About = () => {
             />
             <AnimatedText
               as='h3'
-              text='Career path'
-              className='text-sm uppercase tracking-wider text-dark-200 dark:text-dark-400'
+              text="How'd I get here?"
+              className='text-sm uppercase tracking-wider text-dark-200 dark:text-dark-400 my-3'
             />
             <AnimatedText
               as='p'
-              text="My career path was a little unconventional. I landed my first big boy job when a temp agency hired me to package envelopes for an escrow company. A decade plus later and I've been fortunate to work as a data analyst for great companies like First American Title and Zillow.  Now my latest endeavor is to become a full-time developer."
+              text="My career path was a little unconventional. I started out my career when a temp agency hired me to package envelopes for an escrow company. A decade plus later and I've been fortunate to work as a data analyst for great companies like First American Title and Zillow.  I took my tutorial training wheels off about a year ago and since then I've delivered and deployed three production level applications for local businesses."
               className='text-dark-400 dark:text-dark-200 mt-6 text-md font-light leading-relaxed'
             />
           </motion.article>

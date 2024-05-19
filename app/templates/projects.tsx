@@ -24,11 +24,11 @@ export const Projects = () => {
         whileInView='visible'
         exit='hidden'
         viewport={{ once: true }}
-        className='relative mt-16 grid grid-cols-12 gap-y-10 md:ml-24 md:gap-x-8 lg:gap-x-16'
+        className='relative mt-16 grid grid-cols-12 gap-y-10 md:ml-24 md:gap-x-8 lg:gap-x-16 smooth'
       >
         <AnimatedText
           as='p'
-          className='col-span-full text-lg font-semibold leading-relaxed text-dark-400 dark:text-dark-200 md:col-span-6 xl:col-span-8'
+          className='col-span-full text-lg font-semibold leading-relaxed text-dark-400 dark:text-dark-200 md:col-span-6 xl:col-span-8 smooth'
           text='My Recent Works'
         />
 
@@ -72,10 +72,10 @@ export const Projects = () => {
               },
             },
           }}
-          className='group flex w-14 items-end gap-3 self-start text-2xl font-light text-dark-400 transition-all duration-300 ease-in-out hover:text-dark-500 dark:text-dark-200 md:w-24 md:text-3xl'
+          className='group flex w-14 items-end gap-3 self-start text-2xl font-light text-dark-400 smooth hover:text-dark-500 dark:text-dark-200 md:w-24 md:text-3xl'
           style={{ writingMode: 'vertical-rl' }}
           icon={
-            <VscArrowRight className='rotate-[135deg] text-3xl text-dark-200 transition duration-300 ease-in-out group-hover:-translate-x-1 group-hover:translate-y-1 group-hover:text-dark-300 dark:text-dark-400 md:text-4xl' />
+            <VscArrowRight className='rotate-[135deg] text-3xl text-dark-200 smooth group-hover:-translate-x-1 group-hover:translate-y-1 group-hover:text-dark-300 dark:text-dark-400 md:text-4xl' />
           }
         >
           Side projects
@@ -88,7 +88,7 @@ export const Projects = () => {
           whileInView='visible'
           exit='hidden'
           viewport={{ once: true }}
-          className='relative grid flex-1 grid-cols-12 gap-y-12 md:gap-x-8 md:gap-y-16 lg:gap-x-16'
+          className='relative grid flex-1 grid-cols-12 gap-y-12 md:gap-x-8 md:gap-y-16 lg:gap-x-16 smooth'
         >
           {projects.map(project => (
             <ProjectItem key={project.id} project={project} />

@@ -10,7 +10,7 @@ export const Hero = () => {
   return (
     <header
       id='intro'
-      className='shadow-[inset_0_-40px_15px_-10px_#ededed] dark:shadow-[inset_0_-40px_15px_-10px_#171717] md:bg-auto overflow-hidden h-[750px]'
+      className='shadow-[inset_0_-40px_15px_-10px_#ededed] dark:shadow-[inset_0_-40px_15px_-10px_#171717] md:bg-auto overflow-hidden h-[750px] smooth'
     >
       <motion.section
         variants={{
@@ -21,9 +21,9 @@ export const Hero = () => {
         whileInView='visible'
         exit='hidden'
         viewport={{ once: true }}
-        className='container relative text-center md:text-left ease-in-out duration-300 transition-all flex flex-col justify-evenly'
+        className='container relative text-center md:text-left smooth flex flex-col justify-evenly'
       >
-        <div className='flex flex-col justify-center sm:justify-start md:translate-y-40'>
+        <div className='flex flex-col justify-center smooth sm:justify-start md:translate-y-40'>
           <AnimatePresence>
             <article className='lg:max-w-[60%]'>
               <AnimatedLetters
@@ -45,7 +45,7 @@ export const Hero = () => {
               />
               <AnimatedText
                 as='p'
-                className='mt-1 text-lg font-medium leading-relaxed text-dark-400 dark:text-dark-300 text-center md:text-left'
+                className='mt-1 text-lg font-medium leading-relaxed text-dark-400 dark:text-dark-300 text-center md:text-left smooth'
                 text='Front-End Developer & Data Analyst'
               />
             </article>

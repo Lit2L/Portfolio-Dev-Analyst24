@@ -88,7 +88,7 @@ export const HeroIllustration = () => {
   if (!mounted) return null
 
   return (
-    <section className='z-[-10] absolute scale-[0.6] top-28 right-[50%] translate-x-[50%] md:translate-x-0 md:scale-[0.8] md:top-10 md:-right-40 lg:-right-36 lg:-top-10 xl:-top-10 xl:-right-20 2xl:-right-16 '>
+    <section className='z-[-10] absolute scale-[0.6] top-28 right-[50%] translate-x-[50%] md:translate-x-0 md:scale-[0.8] md:top-10 md:-right-40 lg:-right-36 lg:-top-10 xl:-top-10 xl:-right-20 2xl:-right-16 smooth '>
       <picture>
         <source type='image/webp' srcSet={image.base.webp} />
         <source type='image/png' srcSet={image.base.png} />
