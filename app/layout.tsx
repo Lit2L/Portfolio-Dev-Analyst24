@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
+
 import localFont from 'next/font/local'
 import clsx from 'clsx'
 import { Kanit } from 'next/font/google'
@@ -53,9 +54,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className=''>{children}</div>
           <Analytics />
           <Footer />
-        </Providers>
 
-        <Analytics />
+          <Analytics />
+        </Providers>
       </body>
     </html>
   )

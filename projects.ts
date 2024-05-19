@@ -17,6 +17,7 @@ export const projects: Project[] = [
       'https://cdn.dribbble.com/userupload/14580331/file/original-489722bcffe8bab242fa405d066a1303.png?resize=1024x768',
     imageAlt: 'louvair',
     link: '/project/louvair',
+    color: '#F9F9F9',
   },
   {
     id: 1,

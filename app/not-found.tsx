@@ -21,7 +21,7 @@ export default function NotFound() {
           <AnimatedLetters
             key='title'
             as='h2'
-            text='A deeper dive is in the works'
+            text='A deep dive is in the works'
             className='text-4xl font-medium lg:text-5xl'
             textVariants={{
               hidden: { transition: { staggerChildren: 0.015 } },
