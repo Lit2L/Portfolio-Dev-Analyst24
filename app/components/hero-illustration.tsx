@@ -103,7 +103,7 @@ export const HeroIllustration = () => {
           transition={{
             duration: 0.75,
             ease: [0.455, 0.03, 0.515, 0.955],
-            delay: 1,
+            delay: 0.5,
           }}
           priority
           src={image.base.png}

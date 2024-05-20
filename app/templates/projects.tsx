@@ -8,14 +8,12 @@ import { MotionLinkButton } from '@components/link-button'
 import { ProjectItem } from '@components/project-item'
 import { SectionHeader } from '@components/section-header'
 import { SectionShell } from '@components/section-shell'
-
 import { projects } from '../../projects'
 
 export const Projects = () => {
   return (
     <SectionShell id='projects'>
       <SectionHeader heading='Projects' />
-
       <motion.section
         variants={{
           visible: { transition: { staggerChildren: 0.25 } },
@@ -28,7 +26,7 @@ export const Projects = () => {
       >
         <AnimatedText
           as='p'
-          className='col-span-full text-lg font-semibold leading-relaxed text-dark-400 dark:text-dark-200 md:col-span-6 xl:col-span-8 smooth'
+          className='col-span-full text-lg font-semibold leading-relaxed text-dark-600 dark:text-dark-200 md:col-span-6 xl:col-span-8 smooth'
           text='My Recent Works'
         />
 
@@ -72,7 +70,7 @@ export const Projects = () => {
               },
             },
           }}
-          className='group flex w-14 items-end gap-3 self-start text-2xl font-light text-dark-400 smooth hover:text-dark-500 dark:text-dark-200 md:w-24 md:text-3xl'
+          className='group flex w-14 items-end gap-3 self-start text-2xl font-light text-raisin smooth hover:text-dark-500 dark:text-dark-200 md:w-24 md:text-3xl'
           style={{ writingMode: 'vertical-rl' }}
           icon={
             <VscArrowRight className='rotate-[135deg] text-3xl text-dark-200 smooth group-hover:-translate-x-1 group-hover:translate-y-1 group-hover:text-dark-300 dark:text-dark-400 md:text-4xl' />

@@ -5,7 +5,7 @@ export type Project = {
   link: string
   image: string
   imageAlt: string
-  color?: string
+  color: string
 }
 
 export const projects: Project[] = [
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     image:
       'https://cdn.dribbble.com/userupload/14580218/file/original-c2ffc1b0fe4de77a6cbb42837ee088e8.png?resize=1024x768',
     imageAlt: 'A web streaming service inspired app with a different approach to the design.',
-    link: '/project/admin-hippo',
+    link: '/project/hippo',
     color: '#1D1D26',
   },
   {
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     image:
       'https://cdn.dribbble.com/userupload/14580435/file/original-d64910229d568969753a296b260cd631.png?resize=1024x768',
     imageAlt: 'iYam Swim Coach by Larry Ly',
-    link: '/project/iyam-swim-coach',
+    link: '/project/iyam',
     color: '#E3E3E3',
   },
 ]

@@ -80,15 +80,16 @@ export const ProjectItem = memo(({ project, ...props }: ProjectItemProps) => {
         </motion.figure>
         <AnimatedText
           text={area}
-          className='mt-6 text-sm font-light text-dark-200 dark:text-dark-400'
+          className='mt-6 text-sm font-light text-dark-600 dark:text-dark-400'
         />
         <AnimatedText
           as='h3'
           text={name}
-          className='mt-3 text-3xl text-[#f7f7f7] dark:text-dark-200'
+          className='mt-3 text-3xl text-dark-700 dark:text-dark-200'
         />
       </motion.article>
     </Link>
   )
 })
+
 ProjectItem.displayName = 'ProjectItem'

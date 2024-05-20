@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 
 import { SectionHeader } from '@components/section-header'
 import { SectionShell } from '@components/section-shell'
+import Link from 'next/link'
 
 type ContactShellProps = {
   children: ReactNode
@@ -31,15 +32,15 @@ export const ContactShell = ({ children }: ContactShellProps) => (
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0, transition: { ease: 'circOut', duration: 0.5 } },
           }}
-          className='col-span-full text-lg font-light leading-relaxed text-dark-400 dark:text-dark-200 md:col-span-6 xl:col-span-8 smooth'
+          className='col-span-full text-lg font-medium leading-relaxed text-dark-600 dark:text-dark-50 md:col-span-6 xl:col-span-8 smooth'
         >
-          Do not hesitate to contact me through the form here or by direct email on{' '}
-          <a
-            href='mailto:hey@larryly.com'
+          Contact me if you&apos;d like to connect at{' '}
+          <Link
+            href='mailto:larryly1@gmail.com'
             className='underline decoration-dark-200 underline-offset-[6px] hover:decoration-dark-300 dark:decoration-dark-500 dark:hover:decoration-dark-400'
           >
-            hey@larryly.com
-          </a>{' '}
+            larryly1@gmail.com
+          </Link>{' '}
           regardless of the subject.
         </motion.p>
       </div>

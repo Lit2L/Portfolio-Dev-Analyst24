@@ -41,13 +41,13 @@ export const About = () => {
         className='flex px-6 mt-12 justify-start smooth items-center relative'
       >
         {/* <Minus className='ml-12' size={24} /> */}
-        <Quote size={36} className='ml-3 sm:ml-12' />
+        <Quote size={28} className='ml-3 sm:ml-12' />
         <AnimatedText
           as='p'
-          className='text-dark-400 dark:text-dark-200  text-lg font-bold leading-relaxed px-6 '
+          className='text-raisin dark:text-dark-200 text-lg font-semibold leading-relaxed px-6 '
           text='Becoming is better than being.'
         />
-        <Quote size={36} className='' />
+        <Quote size={28} className='' />
         {/* <MotionLinkButton */}
         {/*   href='/about' */}
         {/*   motionProps={{ */}
@@ -75,22 +75,22 @@ export const About = () => {
             <AnimatedText
               as='h3'
               text='Who am I'
-              className='text-sm uppercase tracking-wider text-dark-200 dark:text-dark-400'
+              className='text-sm uppercase tracking-widest text-raisin dark:text-dark-400'
             />
             <AnimatedText
               as='p'
               text="I'm Larry, I'm a self-taught developer with a background in data analytics. The past year I've been working on my coding skills with an emphasis on front-end development and app design."
-              className='text-dark-400 dark:text-dark-200 mt-6 text-lg font-light leading-relaxed'
+              className='text-dark-800  dark:text-dark-500 mt-6 text-md font-light font-kanit leading-relaxed'
             />
             <AnimatedText
               as='h3'
               text="How'd I get here?"
-              className='text-sm uppercase tracking-wider text-dark-200 dark:text-dark-400 my-3'
+              className='text-sm uppercase tracking-wider text-raisin dark:text-dark-400 my-6'
             />
             <AnimatedText
               as='p'
               text="My career path was a little unconventional. I started out my career when a temp agency hired me to package envelopes for an escrow company. A decade plus later and I've been fortunate to work as a data analyst for great companies like First American Title and Zillow.  I took my tutorial training wheels off about a year ago and since then I've delivered and deployed three production level applications for local businesses."
-              className='text-dark-400 dark:text-dark-200 mt-6 text-md font-light leading-relaxed'
+              className='text-dark-900 dark:text-dark-200 mt-6 text-md font-light font-kanit leading-relaxed'
             />
           </motion.article>
 
@@ -107,7 +107,7 @@ export const About = () => {
             <AnimatedText
               as='h3'
               text='Tech I love using'
-              className='text-sm uppercase tracking-wider text-dark-200 dark:text-dark-400'
+              className='text-sm uppercase tracking-wide text-raisin dark:text-dark-400'
             />
             <motion.div
               variants={{
@@ -118,9 +118,13 @@ export const About = () => {
                   transition: { duration: 0.5, ease: 'circOut' },
                 },
               }}
-              className='mt-6 flex flex-wrap gap-6 text-dark-300'
+              className='mt-6 flex flex-wrap gap-6 text-dark-800'
             >
-              <IoLogoFigma size={28} title='Figma' className='hover:text-blue-100 transition' />
+              <IoLogoFigma
+                size={28}
+                title='Figma'
+                className='text-figma-gradient hover:text-radial text-powder bg-clip-text transition'
+              />
               <SiNeovim size={28} title='Neovim' className='hover:text-blue-500 transition' />
               <SiTypescript
                 size={28}

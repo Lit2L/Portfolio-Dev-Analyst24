@@ -81,6 +81,7 @@ export const SideProjectItem = memo(function SideProjectItem({
             className='object-cover w-full h-full'
           />
         </motion.figure>
+
         <section className='flex justify-between items-center mt-6'>
           <AnimatedText
             text={area}

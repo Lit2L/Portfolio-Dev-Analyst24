@@ -57,4 +57,7 @@
   .scrollbar-thin::-webkit-scrollbar-track {
     background-color: #1a202c;
   }
+  .figma-gradient {
+    color: linear-gradient(45deg,#0dcf83, #a259ff, #ff7262);
+  }
 }

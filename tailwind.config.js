@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   darkMode: 'class',
   content: [
@@ -27,13 +28,14 @@ module.exports = {
           850: '#171717',
           900: '#0e0e0e',
         },
+        raisin: '#352D39',
       },
       container: {
         center: true,
         padding: '1rem',
       },
       backgroundImage: {
-        powder: 'radial-gradient(circle, #1D1F20, #f7f7f7)',
+        powder: 'radial-gradient(circle, #8f8f8f, #f7f7f7)',
         radial: 'radial-gradient(circle, #173B4F, #1D1F20, #181818)',
         conic: 'conic-gradient(from 180deg at 50% 50%, #181818, #1C475F)',
       },
