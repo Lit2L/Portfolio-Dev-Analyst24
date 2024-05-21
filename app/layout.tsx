@@ -9,6 +9,7 @@ import { MobileNav } from '@components/mobile-navigation'
 import { Navigation } from '@components/navigation'
 import './styles/globals.css'
 import './styles/tailwind.css'
+import './styles/gradients.css'
 import { Providers } from '@providers'
 
 const epilogue = localFont({
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en' className='scroll-p-32 scroll-smooth' suppressHydrationWarning>
+    <html lang='en' suppressHydrationWarning>
       <body
         className={clsx(
           'dark:bg-radial bg-powder font-epilogue dark:text-dark-50 ',

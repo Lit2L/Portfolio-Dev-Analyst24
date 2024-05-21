@@ -42,7 +42,7 @@ export function ContactForm() {
         <Input
           {...register('name')}
           name='name'
-          placeholder='Larry Ly'
+          placeholder='Hi, My name is..'
           className={cn({
             'border-red-500 dark:border-red-400': errors.name?.message,
             'border-green-500 dark:border-green-400': isValid && !errors.name?.message,
@@ -60,10 +60,10 @@ export function ContactForm() {
         <Input
           {...register('email')}
           name='email'
-          placeholder='hey@larryly.com'
+          placeholder='heyLarry@email.com'
           className={cn({
-            'border-red-500 dark:border-red-400': errors.email?.message,
-            'border-green-500 dark:border-green-400': isValid && !errors.email?.message,
+            'border-red-500 text-raisin dark:border-red-400': errors.email?.message,
+            'border-green-500 text-raisin dark:border-green-400': isValid && !errors.email?.message,
           })}
         />
         {errors.email && (
@@ -86,11 +86,11 @@ export function ContactForm() {
       </label>
 
       <Label required>
-        What&apos;s your message?
+        What&apos;s up?
         <Textarea
           {...register('message')}
           name='message'
-          placeholder="Hi Larry, let's work!"
+          placeholder="Hi Larry, let's chat!"
           className={cn({
             'border-red-500 dark:border-red-400': errors.message?.message,
             'border-green-500 dark:border-green-400': isValid && !errors.message?.message,

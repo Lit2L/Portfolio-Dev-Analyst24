@@ -3,12 +3,12 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { HiDownload } from 'react-icons/hi'
-import { Logo } from '@components/logo'
+import Logo from '@components/logo'
 import { linkVariants, navVariants } from '@components/navigation'
 import { ThemeToggleButton } from '@components/theme-toggle-button'
 
 const AnimatedLink = motion(Link)
-AnimatedLink.defaultProps = { className: 'hover:text-primary-brand nav-link' }
+AnimatedLink.defaultProps = { className: 'hover:text-primary-brand nav-link font-bold' }
 
 export function Navigation() {
   return (

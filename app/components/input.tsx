@@ -24,7 +24,7 @@ export const Label = forwardRef<HTMLLabelElement, LabelProps>(function Label(
         visible: { opacity: 1, y: 0, transition: { ease: 'circOut', duration: 0.5 } },
       }}
       className={cn(
-        'relative block flex-col text-xl font-light text-dark-400 dark:text-dark-200',
+        'relative block flex-col text-xl font-normal text-dark-900 dark:text-dark-200',
         className
       )}
     >
@@ -49,7 +49,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
           visible: { opacity: 1, y: 0, transition: { ease: 'circOut', duration: 0.5 } },
         }}
         className={cn(
-          'focus-within:border-primary-brand mt-2 w-full appearance-none rounded-none border-b-[1px] border-dark-200 bg-transparent py-4 px-3 text-2xl font-light text-dark-400 outline-none placeholder:text-dark-200 dark:border-dark-600 dark:text-dark-200 dark:placeholder:text-dark-500',
+          'focus-within:border-primary-brand mt-2 w-full appearance-none rounded-none border-b-[2px] border-dark-200 bg-transparent py-4 px-3 text-xl text-dark-700 outline-none placeholder:text-dark-400 font-light dark:border-dark-300 dark:text-dark-200 dark:placeholder:text-dark-500',
           className
         )}
       />
@@ -72,7 +72,7 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(function 
         visible: { opacity: 1, y: 0, transition: { ease: 'circOut', duration: 0.5 } },
       }}
       className={cn(
-        'focus-within:border-primary-brand mt-2 h-40 w-full appearance-none rounded-none border-b-[1px] border-dark-200 bg-transparent py-4 px-3 text-2xl font-light text-dark-400 outline-none placeholder:text-dark-200 dark:border-dark-600 dark:text-dark-200 dark:placeholder:text-dark-500',
+        'focus-within:border-primary-brand mt-2 h-40 w-full appearance-none rounded-none border-b-[1px] border-dark-200 bg-transparent py-4 px-3 text-xl font-light text-dark-500 outline-none placeholder:text-dark-400 dark:border-dark-600 dark:text-dark-200 dark:placeholder:text-dark-400',
         className
       )}
     />
@@ -88,14 +88,14 @@ export const SubmitButton: FC<{ children: ReactNode }> = ({ children, ...props }
   >
     <button
       type='submit'
-      className='group flex items-center gap-x-2 text-3xl font-light text-dark-400 transition duration-300 ease-in-out hover:text-dark-500 dark:text-dark-200'
+      className='group flex items-center gap-x-2 text-3xl font-light text-dark-600 smooth hover:text-dark-500 dark:text-dark-200'
       // eslint-disable-next-line react/jsx-props-no-spreading
       {...props}
     >
       {children}
       <VscArrowRight
         size={36}
-        className='mb-1 block -rotate-45 text-dark-200 transition duration-300 ease-in-out group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-dark-300 dark:text-dark-400'
+        className='mb-1 block -rotate-45 text-dark-200 transition-all duration-300 ease-in-out group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-dark-300 dark:text-dark-400'
       />
     </button>
   </motion.div>

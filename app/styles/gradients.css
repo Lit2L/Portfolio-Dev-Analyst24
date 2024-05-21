@@ -1,0 +1,94 @@
+/* From Ice To Fire CSS Linear Gradient Background */
+.tsx-gradient {
+  color: #72C6EF;
+  color: linear-gradient(
+    to right,
+    #72C6EF,#004E8F
+  );
+}
+
+/* From Ice To Fire CSS Linear Gradient Background */
+.react-gradient {
+  color: #00d8ff;
+  color: linear-gradient(
+    to right,
+    #20232A,#00d8ff
+  );
+}
+
+/* From Ice To Fire CSS Linear Gradient Background */
+.vercel-gradient {
+  color: #000000;
+  color: linear-gradient(
+    to right,
+    #ffffff,#000000
+  );
+}
+
+/* From Ice To Fire CSS Linear Gradient Background */
+.prisma-gradient {
+  color: #0C344B;
+  color: linear-gradient(
+    to right,
+    #FFFFFF,#0C344B
+  );
+}
+
+/* From Ice To Fire CSS Linear Gradient Background */
+.sqlserver-gradient {
+  color: #cc2927;
+  color: linear-gradient(
+    to right,
+    #ffffff,#cc2927
+  );
+}
+
+/* From Ice To Fire CSS Linear Gradient Background */
+.mysql-gradient {
+  color: #00758F;
+  color: linear-gradient(
+    to right,
+    #F29111,#00758F
+  );
+}
+
+/* From Ice To Fire CSS Linear Gradient Background */
+.s3-gradient {
+  color: #ff9960;
+  color: linear-gradient(
+    to right,
+    #146eb4,#f78d12
+  );
+}
+/* From Ice To Fire CSS Linear Gradient Background */
+.postgresql-gradient {
+  /* color: #00758F; */
+  color: linear-gradient(
+    to right,
+    #F29111,#00758F
+  );
+}
+/* From Ice To Fire CSS Linear Gradient Background */
+.figma-gradient {
+  color: #0ACF83;
+  color: linear-gradient(
+    to right,
+    #F24E1E,
+    #A259FF,
+    #009688,
+    #F28B82,
+
+  );
+}
+
+.tailwind-gradient {
+  color: #38BDF8;
+  color: linear-gradient(
+    to right,
+    #38B2AC,#38BDF8
+  );
+}
+
+.brand-text {
+  color: #000000;
+}

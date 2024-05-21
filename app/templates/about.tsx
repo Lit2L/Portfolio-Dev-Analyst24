@@ -10,6 +10,12 @@ import {
   SiReact,
   SiTailwindcss,
   SiTypescript,
+  SiVercel,
+  SiAmazons3,
+  SiAmazonaws,
+  SiMysql,
+  SiPostgresql,
+  SiMicrosoftsqlserver,
 } from 'react-icons/si'
 
 import { AnimatedText } from '@components/animated-text'
@@ -74,13 +80,13 @@ export const About = () => {
           >
             <AnimatedText
               as='h3'
-              text='Who am I'
+              text='Who am I?'
               className='text-sm uppercase tracking-widest text-raisin dark:text-dark-400'
             />
             <AnimatedText
               as='p'
               text="I'm Larry, I'm a self-taught developer with a background in data analytics. The past year I've been working on my coding skills with an emphasis on front-end development and app design."
-              className='text-dark-800  dark:text-dark-500 mt-6 text-md font-light font-kanit leading-relaxed'
+              className=' dark:text-dark-200 mt-6 text-md font-light font-kanit leading-relaxed'
             />
             <AnimatedText
               as='h3'
@@ -120,25 +126,89 @@ export const About = () => {
               }}
               className='mt-6 flex flex-wrap gap-6 text-dark-800'
             >
-              <IoLogoFigma
-                size={28}
-                title='Figma'
-                className='text-figma-gradient hover:text-radial text-powder bg-clip-text transition'
-              />
-              <SiNeovim size={28} title='Neovim' className='hover:text-blue-500 transition' />
-              <SiTypescript
-                size={28}
-                title='TypeScript'
-                className='hover:text-blue-500 transition'
-              />
-              <SiReact size={28} title='React.js' className='hover:text-blue-500 transition' />
-              <SiNextdotjs size={28} title='Next.js' className='hover:text-blue-500 transition' />
-              <SiTailwindcss
-                size={28}
-                title='TailwindCSS'
-                className='hover:text-blue-500 transition'
-              />
-              <SiPrisma size={28} title='Prisma' className='hover:text-blue-500 transition' />
+              <div className='flex flex-col items-center justify-center text-[#004E8F] dark:tsx-gradient'>
+                <SiTypescript
+                  size={28}
+                  title='TypeScript'
+                  className=' transition'
+                />
+                <span className='text-[10px] text-dark-500'>Typescript</span>
+              </div>
+
+              <div className='flex flex-col  items-center justify-center react-gradient'>
+                <SiReact
+                  size={28}
+                  title='React.js'
+                  className='transition'
+                />
+                <span className='text-[10px] text-dark-500 '>React</span>
+              </div>
+
+              <div className='flex flex-col items-center justify-center'>
+                <SiNextdotjs
+                  size={28}
+                  title='Next.js'
+                  className='text-[#000000]  transition'
+                />
+                <span className='text-[10px] text-dark-500 '>Next.js</span>
+              </div>
+
+              <div className='flex flex-col items-center justify-center'>
+                <SiTailwindcss
+                  size={28}
+                  title='TailwindCSS'
+                  className='tsx-gradient  transition'
+                />
+                <span className='text-[10px] text-dark-500'>TailwindCSS</span>
+              </div>
+
+              <div className='flex flex-col items-center justify-center'>
+                <SiVercel
+                  size={28}
+                  title='Vercel'
+                  className='hover:text-black transition vercel-gradient'
+                />
+                <span className='text-[10px] text-dark-500 '>Vercel</span>
+              </div>
+
+              <div className='flex flex-col items-center justify-center'>
+                <SiAmazons3 size={28} title='S3' className='text-[#44892C]' />
+                <span className='text-[10px] text-dark-500 '>S3</span>
+              </div>
+
+              <div className='flex flex-col items-center justify-center '>
+                <SiPrisma
+                  size={28}
+                  title='Prisma'
+                  className='hover:text-cyan-500 transition prisma-gradient'
+                />
+                <span className='text-[10px] text-dark-500 '>Prisma</span>
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <SiMicrosoftsqlserver
+                  size={28}
+                  title='SqlServer'
+                  className='hover:text-red-500 transition sqlserver-gradient'
+                />
+                <span className='text-[10px] text-dark-500'>SQL-Server</span>
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <SiMysql size={28} title='MySQL' className='mysql-gradient' />
+                <span className='text-[10px] text-dark-500'>MySQL</span>
+              </div>
+              <div className='flex flex-col items-center justify-center postgresql-gradient'>
+                <SiPostgresql
+                  size={28}
+                  title='PostgreSQL'
+                  className=' text-[#336791]'
+                />
+                <span className='text-[10px] text-dark-500'>PostgreSQL</span>
+              </div>
+
+              <div className='flex flex-col items-center justify-center'>
+                <IoLogoFigma size={28} title='Figma' className='transition figma-gradient' />
+                <span className='text-[10px] text-dark-500 '>Figma</span>
+              </div>
             </motion.div>
           </motion.section>
         </section>
