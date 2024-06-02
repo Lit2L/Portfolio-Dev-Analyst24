@@ -18,7 +18,7 @@ export function Navigation() {
       className='container fixed inset-x-0 top-0 z-50 hidden w-full items-center justify-between md:flex'
     >
       <AnimatedLink href='/#' variants={linkVariants} className=''>
-        <Logo className='w-24' />
+        <Logo />
       </AnimatedLink>
 
       <nav className='flex items-center justify-center gap-x-14 text-lg'>
