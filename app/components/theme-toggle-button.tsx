@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, type ComponentPropsWithRef, type FC, useEffect } from 'react'
+import {  type ComponentPropsWithRef, type FC, useEffect } from 'react'
 
 import type { HTMLMotionProps } from 'framer-motion'
 import { AnimatePresence, motion } from 'framer-motion'

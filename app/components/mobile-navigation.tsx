@@ -7,7 +7,7 @@ import { useScrollspy } from 'use-scrollspy'
 
 import { useEffect, useRef, useState } from 'react'
 
-import Logo from '@components/logo'
+import Logo from '@components/Logo'
 import { ThemeToggleButton } from '@components/theme-toggle-button'
 import { useClickAway } from '@hooks/use-click-away'
 import { usePathname } from 'next/navigation'

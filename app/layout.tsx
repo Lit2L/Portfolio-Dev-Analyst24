@@ -10,7 +10,7 @@ import { Navigation } from '@components/navigation'
 import './styles/globals.css'
 import './styles/tailwind.css'
 import './styles/gradients.css'
-import { Providers } from '@providers'
+import {ThemeProvider} from '@components/theme-provider'
 
 const epilogue = localFont({
   src: [
@@ -48,7 +48,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           kanit.className
         )}
       >
-        <Providers>
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
           <Navigation />
           <MobileNav />
           <div className=''>{children}</div>
@@ -56,7 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
 
           <Analytics />
-        </Providers>
+        </ThemeProvider>
       </body>
     </html>
   )
