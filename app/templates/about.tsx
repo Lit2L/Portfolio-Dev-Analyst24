@@ -25,6 +25,7 @@ import Image from 'next/image'
 import { useMounted } from '@hooks/use-mounted'
 import { useTheme } from '@hooks/use-theme'
 import { cn } from '@utils/cn'
+import { MotionLinkButton } from '@components/link-button'
 const MotionImage = motion(Image)
 
 export const About = () => {
@@ -47,25 +48,25 @@ export const About = () => {
         className='flex px-6 mt-12 justify-start smooth items-center relative'
       >
         {/* <Minus className='ml-12' size={24} /> */}
-        <Quote size={28} className='ml-3 sm:ml-12' />
+        {/* <Quote size={28} className='ml-3 sm:ml-12' />
         <AnimatedText
           as='p'
           className='text-raisin dark:text-dark-200 text-lg font-semibold leading-relaxed px-6 '
           text='Becoming is better than being.'
         />
-        <Quote size={28} className='' />
-        {/* <MotionLinkButton */}
-        {/*   href='/about' */}
-        {/*   motionProps={{ */}
-        {/*     variants: { */}
-        {/*       hidden: { opacity: 0, y: 50 }, */}
-        {/*       visible: { opacity: 1, y: 0, transition: { ease: 'circOut', duration: 0.5 } }, */}
-        {/*     }, */}
-        {/*   }} */}
-        {/*   className='col-span-full md:col-start-7 xl:col-start-9' */}
-        {/* > */}
-        {/*   More about me */}
-        {/* </MotionLinkButton> */}
+        <Quote size={28} className='' /> */}
+        {/* <MotionLinkButton
+          href='/about'
+          motionProps={{
+            variants: {
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0, transition: { ease: 'circOut', duration: 0.5 } },
+            },
+          }}
+          className='col-span-full md:col-start-7 xl:col-start-9'
+        >
+          More about me
+        </MotionLinkButton> */}
       </motion.section>
       <section className='relative mt-24 flex grid-cols-12 flex-col-reverse gap-y-10 md:ml-24 md:grid md:gap-x-8 lg:gap-x-16'>
         <section className='col-span-full md:col-span-6 xl:col-span-8'>
@@ -79,24 +80,9 @@ export const About = () => {
             viewport={{ once: true }}
           >
             <AnimatedText
-              as='h3'
-              text='Who am I?'
-              className='text-sm uppercase tracking-widest text-raisin dark:text-dark-400'
-            />
-            <AnimatedText
               as='p'
-              text="I'm Larry, I'm a self-taught developer with a background in data analytics. The past year I've been working on my coding skills with an emphasis on front-end development and app design."
-              className=' dark:text-dark-200 mt-6 text-md font-light font-kanit leading-relaxed'
-            />
-            <AnimatedText
-              as='h3'
-              text="How'd I get here?"
-              className='text-sm uppercase tracking-wider text-raisin dark:text-dark-400 my-6'
-            />
-            <AnimatedText
-              as='p'
-              text="My career path was a little unconventional. I started out my career when a temp agency hired me to package envelopes for an escrow company. A decade plus later and I've been fortunate to work as a data analyst for great companies like First American Title and Zillow.  I took my tutorial training wheels off about a year ago and since then I've delivered and deployed three production level applications for local businesses."
-              className='text-dark-900 dark:text-dark-200 mt-6 text-md font-light font-kanit leading-relaxed'
+              text="I'm a developer with a background in data management. The past few years I've been working on app development focusing on developing full-stack applications."
+              className=' dark:text-dark-200 mt-6 text-lg font-light font-kanit leading-relaxed'
             />
           </motion.article>
 
@@ -127,38 +113,22 @@ export const About = () => {
               className='mt-6 flex flex-wrap gap-6 text-dark-800'
             >
               <div className='flex flex-col items-center justify-center text-[#004E8F] dark:tsx-gradient'>
-                <SiTypescript
-                  size={28}
-                  title='TypeScript'
-                  className=' transition'
-                />
+                <SiTypescript size={28} title='TypeScript' className=' transition' />
                 <span className='text-[10px] text-dark-500'>Typescript</span>
               </div>
 
               <div className='flex flex-col  items-center justify-center react-gradient'>
-                <SiReact
-                  size={28}
-                  title='React.js'
-                  className='transition'
-                />
+                <SiReact size={28} title='React.js' className='transition' />
                 <span className='text-[10px] text-dark-500 '>React</span>
               </div>
 
               <div className='flex flex-col items-center justify-center'>
-                <SiNextdotjs
-                  size={28}
-                  title='Next.js'
-                  className='text-[#000000]  transition'
-                />
+                <SiNextdotjs size={28} title='Next.js' className='text-[#000000]  transition' />
                 <span className='text-[10px] text-dark-500 '>Next.js</span>
               </div>
 
               <div className='flex flex-col items-center justify-center'>
-                <SiTailwindcss
-                  size={28}
-                  title='TailwindCSS'
-                  className='tsx-gradient  transition'
-                />
+                <SiTailwindcss size={28} title='TailwindCSS' className='tsx-gradient  transition' />
                 <span className='text-[10px] text-dark-500'>TailwindCSS</span>
               </div>
 
@@ -197,11 +167,7 @@ export const About = () => {
                 <span className='text-[10px] text-dark-500'>MySQL</span>
               </div>
               <div className='flex flex-col items-center justify-center postgresql-gradient'>
-                <SiPostgresql
-                  size={28}
-                  title='PostgreSQL'
-                  className=' text-[#336791]'
-                />
+                <SiPostgresql size={28} title='PostgreSQL' className=' text-[#336791]' />
                 <span className='text-[10px] text-dark-500'>PostgreSQL</span>
               </div>
 
@@ -233,7 +199,7 @@ export const About = () => {
           exit='hidden'
           viewport={{ once: true }}
           className={cn(
-            'mb-6 w-2/3 self-start md:col-span-full md:col-start-7 md:mb-0 md:w-full xl:col-start-9 relative aspect-square rounded-full',
+            'mb-6 self-start md:col-span-full md:col-start-7 md:mb-0 md:w-full xl:col-start-9 relative aspect-square rounded-full w-3/4 opacity-80 mx-auto',
             {
               'bg-dark-100': theme === 'light',
               'bg-[#333333]': theme === 'dark',
@@ -249,11 +215,11 @@ export const About = () => {
               },
             }}
             fill
-            quality={95}
+            quality={85}
             src='/assets/LarryProfileNoBackground.png'
             alt='Portrait of Larry Ly'
             loading='lazy'
-            className=''
+            className=' w-1/2'
           />
         </motion.figure>
       </section>

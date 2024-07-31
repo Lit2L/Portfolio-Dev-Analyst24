@@ -10,7 +10,7 @@ export const Hero = () => {
   return (
     <header
       id='intro'
-      className='shadow-[inset_0_-40px_15px_-10px_#ededed] dark:shadow-[inset_0_-40px_15px_-10px_#171717] md:bg-auto overflow-hidden h-[750px] smooth'
+      className='shadow-[inset_0_-40px_15px_-10px_#ededed] dark:shadow-[inset_0_-40px_15px_-10px_#171717] md:bg-auto overflow-hidden h-[90vh] pt-24 smooth  relative z-0'
     >
       <motion.section
         variants={{
@@ -21,7 +21,7 @@ export const Hero = () => {
         whileInView='visible'
         exit='hidden'
         viewport={{ once: true }}
-        className='container relative text-center md:text-left smooth flex flex-col justify-evenly'
+        className='container relative text-center md:text-left smooth flex flex-col justify-center z-10'
       >
         <div className='flex flex-col justify-center smooth sm:justify-start md:translate-y-40'>
           <AnimatePresence>
@@ -29,7 +29,7 @@ export const Hero = () => {
               <AnimatedLetters
                 as='h1'
                 text='Larry Ly'
-                className='text-5xl font-bold md:text-6xl lg:text-7xl tracking-wider text-center md:text-left dark:text-[#f7f7f7] text-[#352D39]'
+                className='text-5xl font-bold md:text-6xl lg:text-8xl tracking-wide text-center md:text-left dark:text-[#f7f7f7] text-[#352D39]'
                 textVariants={{
                   hidden: { transition: { staggerChildren: 0.015 } },
                   visible: { transition: { staggerChildren: 0.015 } },
@@ -46,7 +46,7 @@ export const Hero = () => {
               <AnimatedText
                 as='p'
                 className='mt-1 text-lg font-medium leading-relaxed text-dark-400 dark:text-dark-300 text-center md:text-left smooth'
-                text='Front-End Developer & Data Analyst'
+                text='Developer & Data Analyst'
               />
             </article>
 

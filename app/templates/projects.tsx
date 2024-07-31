@@ -58,7 +58,7 @@ export const Projects = () => {
         viewport={{ once: true }}
         className='mt-24 flex'
       >
-        <MotionLinkButton
+        {/* <MotionLinkButton
           href='/side-projects'
           motionProps={{
             variants: {
@@ -77,7 +77,7 @@ export const Projects = () => {
           }
         >
           Side projects
-        </MotionLinkButton>
+        </MotionLinkButton> */}
         <motion.section
           variants={{
             visible: { transition: { staggerChildren: 0.25 } },

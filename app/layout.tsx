@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
-
+import { Epilogue } from 'next/font/google'
 import localFont from 'next/font/local'
 import clsx from 'clsx'
 import { Kanit } from 'next/font/google'
@@ -10,19 +10,10 @@ import { Navigation } from '@components/navigation'
 import './styles/globals.css'
 import './styles/tailwind.css'
 import './styles/gradients.css'
-import {ThemeProvider} from '@components/theme-provider'
+import { ThemeProvider } from '@components/theme-provider'
 
-const epilogue = localFont({
-  src: [
-    {
-      path: '../public/assets/Epilogue-VariableFont_wght.ttf',
-      style: 'normal',
-    },
-    {
-      path: '../public/assets/Epilogue-Italic-VariableFont_wght.ttf',
-      style: 'italic',
-    },
-  ],
+const epilogue = Epilogue({
+  subsets: ['latin'],
   variable: '--font-epilogue',
   display: 'swap',
 })
@@ -35,7 +26,7 @@ const kanit = Kanit({
 
 export const metadata: Metadata = {
   title: 'Larry Ly - Front-end developer',
-  description: `I'm a self-taught designer & front-end developer, focused on user experience, accessibility and modern web technologies.`,
+  description: `I'm a designer & developer, focused on user experience, accessibility and modern web technologies.`,
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

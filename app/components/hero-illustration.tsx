@@ -107,7 +107,7 @@ export const HeroIllustration = () => {
           }}
           priority
           src={image.base.png}
-          width={693}
+          width={800}
           height={706}
           alt='Hero illustration'
           className='object-cover w-full min-w-[693px] h-full min-h-[706px]'
@@ -131,10 +131,10 @@ export const HeroIllustration = () => {
           }}
           priority
           src={image.profileWidget.png}
-          height={100}
-          width={100}
+          height={200}
+          width={200}
           alt='Hero notification widget'
-          className='absolute right-[28rem] top-8 scale-50 shadow-xl shadow-green-400/20'
+          className='absolute left-[2%] -top-20  shadow-xl shadow-green-400/20'
         />
       </picture>
       <picture>
@@ -155,10 +155,10 @@ export const HeroIllustration = () => {
           }}
           src={image.louvairWidget.png}
           loading='lazy'
-          height={120}
-          width={120}
+          height={350}
+          width={350}
           alt='Hero big widget'
-          className='absolute left-[8rem] top-[28rem] shadow-lg shadow-yellow-300'
+          className='absolute -left-[5rem] top-[28rem] shadow-lg shadow-yellow-300'
         />
       </picture>
       <picture>
@@ -179,10 +179,10 @@ export const HeroIllustration = () => {
           }}
           src={image.iyamWidget.png}
           loading='lazy'
-          height={120}
-          width={120}
+          height={350}
+          width={350}
           alt='Hero big widget'
-          className='absolute right-[8rem] top-[8.25rem] shadow-lg shadow-cyan-500'
+          className='absolute right-[0rem] top-[8.25rem] shadow-lg shadow-cyan-500'
         />
       </picture>
       <picture>
@@ -203,10 +203,10 @@ export const HeroIllustration = () => {
           }}
           src={image.hippoWidget.png}
           loading='lazy'
-          height={120}
-          width={120}
+          height={300}
+          width={300}
           alt='Hero like widget'
-          className='absolute right-[8rem] top-[28rem] shadow-lg shadow-purple-400'
+          className='absolute right-[0rem] top-[28rem] shadow-lg shadow-purple-400'
         />
       </picture>
     </section>
