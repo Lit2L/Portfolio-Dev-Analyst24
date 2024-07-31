@@ -39,12 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           kanit.className
         )}
       >
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='system'
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute='class' defaultTheme='dark' enableSystem disableTransitionOnChange>
           <Navigation />
           <MobileNav />
           <div className=''>{children}</div>
