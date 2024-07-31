@@ -6,11 +6,11 @@ import clsx from 'clsx'
 import type { MotionProps } from 'framer-motion'
 import { motion } from 'framer-motion'
 import useMedia from 'react-use/lib/useMedia'
-import { AnimatedText } from '@components/animated-text'
+import { AnimatedText } from '@/components/animated-text'
 import Link from 'next/link'
-import { cn } from '@utils/cn'
-import { useTheme } from '@hooks/use-theme'
-import { useMounted } from '@hooks/use-mounted'
+import { cn } from '@/utils/cn'
+import { useTheme } from '@/hooks/use-theme'
+import { useMounted } from '@/hooks/use-mounted'
 
 type SideProjectItemProps = ComponentPropsWithoutRef<'a'> & {
   project: any

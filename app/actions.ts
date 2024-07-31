@@ -1,8 +1,8 @@
 'use server'
 
-import { env } from '@env'
-import { ContactFormData, contactSchema } from '@side-projects/schemas'
-import { getErrorMessage } from '@utils/get-error-message'
+import { env } from '@/env'
+import { ContactFormData, contactSchema } from '@/side-projects/schemas'
+import { getErrorMessage } from '@/utils/get-error-message'
 import { Resend } from 'resend'
 import { CreateEmailOptions } from 'resend/build/src/emails/interfaces'
 

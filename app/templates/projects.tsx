@@ -3,11 +3,11 @@
 import { motion } from 'framer-motion'
 import { VscArrowRight } from 'react-icons/vsc'
 
-import { AnimatedText } from '@components/animated-text'
-import { MotionLinkButton } from '@components/link-button'
-import { ProjectItem } from '@components/project-item'
-import { SectionHeader } from '@components/section-header'
-import { SectionShell } from '@components/section-shell'
+import { AnimatedText } from '@/components/animated-text'
+import { MotionLinkButton } from '@/components/link-button'
+import { ProjectItem } from '@/components/project-item'
+import { SectionHeader } from '@/components/section-header'
+import { SectionShell } from '@/components/section-shell'
 import { projects } from '../../projects'
 
 export const Projects = () => {

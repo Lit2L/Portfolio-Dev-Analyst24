@@ -1,4 +1,4 @@
-import { SideProjectItem } from '@components/side-project-item'
+import { SideProjectItem } from '@/components/side-project-item'
 import { getProjects } from './actions'
 
 export default async function Page() {

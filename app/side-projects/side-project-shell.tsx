@@ -1,6 +1,6 @@
 'use client'
 
-import { AnimatedLetters, AnimatedText } from '@components/animated-text'
+import { AnimatedLetters, AnimatedText } from '@/components/animated-text'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ReactNode } from 'react'
 

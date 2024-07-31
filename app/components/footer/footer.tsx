@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 
-import { footerItemVariants, footerVariants } from '@components/footer'
+import { footerItemVariants, footerVariants } from '@/components/footer'
 
 export function Footer() {
   return (

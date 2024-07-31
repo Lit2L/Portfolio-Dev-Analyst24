@@ -1,12 +1,12 @@
 'use client'
 
 import { zodResolver } from '@hookform/resolvers/zod'
-import { cn } from '@utils/cn'
+import { cn } from '@/utils/cn'
 import { useForm } from 'react-hook-form'
-import { Input, Label, SubmitButton, Textarea } from '@components/input'
+import { Input, Label, SubmitButton, Textarea } from '@/components/input'
 import { useState } from 'react'
-import { ContactFormData, contactSchema } from '@side-projects/schemas'
-import { send } from '@actions'
+import { ContactFormData, contactSchema } from '@/side-projects/schemas'
+import { send } from '@/actions'
 
 export function ContactForm() {
   const [formResponse, setFormResponse] = useState<{

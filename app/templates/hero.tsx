@@ -2,9 +2,9 @@
 
 import { AnimatePresence, motion } from 'framer-motion'
 
-import { AnimatedLetters, AnimatedText } from '@components/animated-text'
-import { HeroIllustration } from '@components/hero-illustration'
-import { MotionLinkButton } from '@components/link-button'
+import { AnimatedLetters, AnimatedText } from '@/components/animated-text'
+import { HeroIllustration } from '@/components/hero-illustration'
+import { MotionLinkButton } from '@/components/link-button'
 
 export const Hero = () => {
   return (

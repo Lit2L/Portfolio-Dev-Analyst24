@@ -1,5 +1,5 @@
-import { useMounted } from '@hooks/use-mounted'
-import { useTheme } from '@hooks/use-theme'
+import { useMounted } from '@/hooks/use-mounted'
+import { useTheme } from '@/hooks/use-theme'
 import type { Variants } from 'framer-motion'
 import { motion } from 'framer-motion'
 

@@ -4,13 +4,13 @@ import { Epilogue, Montserrat } from 'next/font/google'
 import localFont from 'next/font/local'
 import clsx from 'clsx'
 import { Kanit } from 'next/font/google'
-import { Footer } from '@components/footer'
-import { MobileNav } from '@components/mobile-navigation'
-import { Navigation } from '@components/navigation'
+import { Footer } from '@/components/footer'
+import { MobileNav } from '@/components/mobile-navigation'
+import { Navigation } from '@/components/navigation'
 import './styles/globals.css'
 import './styles/tailwind.css'
 import './styles/gradients.css'
-import { ThemeProvider } from '@components/theme-provider'
+import { ThemeProvider } from '@/components/theme-provider'
 
 const epilogue = Epilogue({
   subsets: ['latin'],

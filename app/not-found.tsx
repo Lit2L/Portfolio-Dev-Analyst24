@@ -1,7 +1,7 @@
 'use client'
 
-import { AnimatedLetters, AnimatedText } from '@components/animated-text'
-import { MotionLinkButton } from '@components/link-button'
+import { AnimatedLetters, AnimatedText } from '@/components/animated-text'
+import { MotionLinkButton } from '@/components/link-button'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export default function NotFound() {

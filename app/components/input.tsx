@@ -5,7 +5,7 @@ import { forwardRef } from 'react'
 
 import { HTMLMotionProps, motion } from 'framer-motion'
 import { VscArrowRight } from 'react-icons/vsc'
-import { cn } from '@utils/cn'
+import { cn } from '@/utils/cn'
 
 export type LabelProps = HTMLMotionProps<'label'> & {
   required?: boolean

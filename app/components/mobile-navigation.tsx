@@ -4,10 +4,10 @@ import type { Variants } from 'framer-motion'
 import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
 import { useScrollspy } from 'use-scrollspy'
-import Logo from '@components/Logo'
+import Logo from '@/components/Logo'
 import { useEffect, useRef, useState } from 'react'
-import { ThemeToggleButton } from '@components/theme-toggle-button'
-import { useClickAway } from '@hooks/use-click-away'
+import { ThemeToggleButton } from '@/components/theme-toggle-button'
+import { useClickAway } from '@/hooks/use-click-away'
 import { usePathname } from 'next/navigation'
 
 const navVariants: Variants = {

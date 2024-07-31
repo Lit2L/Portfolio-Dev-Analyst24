@@ -18,14 +18,14 @@ import {
   SiMicrosoftsqlserver,
 } from 'react-icons/si'
 
-import { AnimatedText } from '@components/animated-text'
-import { SectionHeader } from '@components/section-header'
-import { SectionShell } from '@components/section-shell'
+import { AnimatedText } from '@/components/animated-text'
+import { SectionHeader } from '@/components/section-header'
+import { SectionShell } from '@/components/section-shell'
 import Image from 'next/image'
-import { useMounted } from '@hooks/use-mounted'
-import { useTheme } from '@hooks/use-theme'
-import { cn } from '@utils/cn'
-import { MotionLinkButton } from '@components/link-button'
+import { useMounted } from '@/hooks/use-mounted'
+import { useTheme } from '@/hooks/use-theme'
+import { cn } from '@/utils/cn'
+import { MotionLinkButton } from '@/components/link-button'
 const MotionImage = motion(Image)
 
 export const About = () => {

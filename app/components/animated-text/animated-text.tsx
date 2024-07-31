@@ -7,7 +7,7 @@ import { useId, useMemo } from 'react'
 import type { Variants } from 'framer-motion'
 import { motion } from 'framer-motion'
 
-import { defaultLetterVariants, defaultTextVariants } from '@components/animated-text'
+import { defaultLetterVariants, defaultTextVariants } from '@/components/animated-text'
 
 type AnimatedTextOwnProps<C extends ElementType> = {
   as?: C | ElementType

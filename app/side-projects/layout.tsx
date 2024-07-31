@@ -1,4 +1,4 @@
-import { getAge } from '@utils/get-age'
+import { getAge } from '@/utils/get-age'
 import { Metadata } from 'next'
 import { SideProjectsShell } from './side-project-shell'
 
