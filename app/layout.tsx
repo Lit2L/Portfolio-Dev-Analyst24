@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
-import { Epilogue } from 'next/font/google'
+import { Epilogue, Montserrat } from 'next/font/google'
 import localFont from 'next/font/local'
 import clsx from 'clsx'
 import { Kanit } from 'next/font/google'
@@ -18,9 +18,9 @@ const epilogue = Epilogue({
   display: 'swap',
 })
 
-const kanit = Kanit({
+const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['200', '400', '600', '700', '800', '900'],
+  variable: '--font-montserrat',
   display: 'swap',
 })
 
@@ -36,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className={clsx(
           'dark:bg-radial bg-powder font-epilogue dark:text-dark-50 ',
           epilogue.className,
-          kanit.className
+          montserrat.variable
         )}
       >
         <ThemeProvider attribute='class' defaultTheme='dark' enableSystem disableTransitionOnChange>

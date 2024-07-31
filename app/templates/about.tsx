@@ -82,7 +82,7 @@ export const About = () => {
             <AnimatedText
               as='p'
               text="I'm a developer with a background in data management. The past few years I've been working on app development focusing on developing full-stack applications."
-              className=' dark:text-dark-200 mt-6 text-lg font-light font-kanit leading-relaxed'
+              className=' dark:text-dark-200 mt-6 text-lg font-light font-montserrat leading-relaxed'
             />
           </motion.article>
 

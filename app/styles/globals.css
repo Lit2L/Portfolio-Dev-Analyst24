@@ -50,20 +50,6 @@
     --ring: 142.4 71.8% 29.2%;
   }
 }
-body {
-  font-family:
-    'Kanit',
-    -apple-system,
-    'Segoe UI',
-    Helvetica Neue,
-    Helvetica,
-    Roboto,
-    Arial,
-    sans-serif,
-    system-ui,
-    'Apple Color Emoji',
-    'Segoe UI Emoji';
-}
 
 @layer base {
   * {

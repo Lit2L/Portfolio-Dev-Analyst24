@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { HiDownload } from 'react-icons/hi'
-import Logo from '../Logo'
+import Logo from '@components/Logo'
 import { linkVariants, navVariants } from '@components/navigation'
 import { ThemeToggleButton } from '@components/theme-toggle-button'
 
