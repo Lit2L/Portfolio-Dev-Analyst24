@@ -14,9 +14,11 @@ export function Navigation() {
       variants={navVariants}
       initial='hidden'
       animate='visible'
-      className='container fixed inset-x-0 top-0 z-50 hidden w-full items-center justify-between md:flex'
+      className='container  h-20 fixed inset-x-0 top-0 z-50 hidden w-full items-center justify-between md:flex border'
     >
-      <AnimatedLink href='/#' variants={linkVariants} className=''></AnimatedLink>
+      <AnimatedLink href='/#' variants={linkVariants} className=''>
+        Larry Ly
+      </AnimatedLink>
 
       <nav className='flex items-center justify-center gap-x-14 text-lg'>
         <AnimatedLink href='/#intro' variants={linkVariants}>
