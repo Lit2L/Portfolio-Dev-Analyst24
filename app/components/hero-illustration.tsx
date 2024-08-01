@@ -155,8 +155,8 @@ export const HeroIllustration = () => {
           }}
           src={image.louvairWidget.png}
           loading='lazy'
-          height={350}
-          width={350}
+          height={300}
+          width={300}
           alt='Hero big widget'
           className='absolute -left-[5rem] top-[28rem] shadow-lg shadow-yellow-300'
         />
@@ -179,8 +179,8 @@ export const HeroIllustration = () => {
           }}
           src={image.iyamWidget.png}
           loading='lazy'
-          height={350}
-          width={350}
+          height={300}
+          width={300}
           alt='Hero big widget'
           className='absolute right-[0rem] top-[8.25rem] shadow-lg shadow-cyan-500'
         />

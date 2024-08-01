@@ -4,7 +4,6 @@ import type { Variants } from 'framer-motion'
 import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
 import { useScrollspy } from 'use-scrollspy'
-import Logo from '@/components/Logo'
 import { useEffect, useRef, useState } from 'react'
 import { ThemeToggleButton } from '@/components/theme-toggle-button'
 import { useClickAway } from '@/hooks/use-click-away'
@@ -72,9 +71,7 @@ export function MobileNav() {
   return (
     <>
       <Link href='/#' className='fixed top-6 h-20 left-2 z-30 md:hidden'>
-        <div className='h-12 w-12'>
-          <Logo />
-        </div>
+        <div className='h-12 w-12'></div>
       </Link>
 
       <button

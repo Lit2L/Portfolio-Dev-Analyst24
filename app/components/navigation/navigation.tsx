@@ -2,7 +2,6 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { HiDownload } from 'react-icons/hi'
-import Logo from '@/components/Logo'
 import { linkVariants, navVariants } from '@/components/navigation'
 import { ThemeToggleButton } from '@/components/theme-toggle-button'
 
@@ -17,9 +16,7 @@ export function Navigation() {
       animate='visible'
       className='container fixed inset-x-0 top-0 z-50 hidden w-full items-center justify-between md:flex'
     >
-      <AnimatedLink href='/#' variants={linkVariants} className=''>
-        <Logo />
-      </AnimatedLink>
+      <AnimatedLink href='/#' variants={linkVariants} className=''></AnimatedLink>
 
       <nav className='flex items-center justify-center gap-x-14 text-lg'>
         <AnimatedLink href='/#intro' variants={linkVariants}>
