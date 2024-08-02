@@ -10,7 +10,7 @@ export const Hero = () => {
   return (
     <header
       id='intro'
-      className='container shadow-[inset_0_-40px_15px_-10px_#ededed] dark:shadow-[inset_0_-40px_15px_-10px_#171717] md:bg-auto overflow-hidden h-[90vh] pt-24 smooth  relative z-0'
+      className='container shadow-[inset_0_-40px_15px_-10px_#ededed] dark:shadow-[inset_0_-40px_15px_-10px_#171717] md:bg-auto overflow-hidden h-[80vh] pt-24 smooth  relative z-0'
     >
       <motion.section
         variants={{
