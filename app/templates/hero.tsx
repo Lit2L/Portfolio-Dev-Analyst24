@@ -10,7 +10,7 @@ export const Hero = () => {
   return (
     <header
       id='intro'
-      className='shadow-[inset_0_-40px_15px_-10px_#ededed] dark:shadow-[inset_0_-40px_15px_-10px_#171717] md:bg-auto overflow-hidden h-[90vh] pt-24 smooth  relative z-0'
+      className='container shadow-[inset_0_-40px_15px_-10px_#ededed] dark:shadow-[inset_0_-40px_15px_-10px_#171717] md:bg-auto overflow-hidden h-[90vh] pt-24 smooth  relative z-0'
     >
       <motion.section
         variants={{
@@ -21,7 +21,7 @@ export const Hero = () => {
         whileInView='visible'
         exit='hidden'
         viewport={{ once: true }}
-        className='container relative text-center md:text-left smooth flex flex-col justify-center z-10'
+        className='relative text-center md:text-left smooth flex flex-col justify-center z-10'
       >
         <div className='flex flex-col justify-center smooth sm:justify-start md:translate-y-40'>
           <AnimatePresence>
@@ -68,6 +68,7 @@ export const Hero = () => {
             </MotionLinkButton>
           </AnimatePresence>
         </div>
+
         <HeroIllustration />
       </motion.section>
     </header>

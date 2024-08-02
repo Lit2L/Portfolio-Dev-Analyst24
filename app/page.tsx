@@ -16,7 +16,7 @@ export default function Index() {
   }, [])
 
   return (
-    <main className='scrollbar-thin overflow-y-scroll scrollbar-thumb-900 scrollbar-track-gray-100'>
+    <main className='scrollbar-thin  scrollbar-thumb-900 scrollbar-track-gray-100'>
       <div className='mt-12'>
         <Hero />
       </div>

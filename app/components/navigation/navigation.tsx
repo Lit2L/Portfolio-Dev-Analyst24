@@ -14,7 +14,7 @@ export function Navigation() {
       variants={navVariants}
       initial='hidden'
       animate='visible'
-      className='container  h-20 fixed inset-x-0 top-0 z-50 hidden w-full items-center justify-between md:flex border'
+      className='container h-20 fixed inset-x-0 top-0 z-50 hidden w-full items-center justify-between md:flex'
     >
       <AnimatedLink href='/#' variants={linkVariants} className=''>
         Larry Ly
