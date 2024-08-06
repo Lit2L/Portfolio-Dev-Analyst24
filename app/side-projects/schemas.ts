@@ -7,7 +7,10 @@ export const contactSchema = z.object({
     .nonempty('I need to know where to reach you!')
     .email("Uh oh, that doesn't look like an email address..."),
   company: z.string(),
-  message: z.string().nonempty('You need to send me a message!'),
+  message: z
+    .string()
+    .nonempty('Please tell me how I can help you')
+    .min(10, 'Your message is too short'),
 })
 
 export type ContactFormData = z.infer<typeof contactSchema>

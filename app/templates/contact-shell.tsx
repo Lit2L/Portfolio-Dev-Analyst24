@@ -41,7 +41,6 @@ export const ContactShell = ({ children }: ContactShellProps) => (
           >
             larryly1@gmail.com
           </Link>{' '}
-          regardless of the subject.
         </motion.p>
       </div>
       <motion.div

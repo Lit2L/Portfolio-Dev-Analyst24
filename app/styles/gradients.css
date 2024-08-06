@@ -1,94 +1,68 @@
 /* From Ice To Fire CSS Linear Gradient Background */
 .tsx-gradient {
-  color: #72C6EF;
-  color: linear-gradient(
-    to right,
-    #72C6EF,#004E8F
-  );
+  color: #72c6ef;
+  color: linear-gradient(to right, #72c6ef, #004e8f);
 }
 
 /* From Ice To Fire CSS Linear Gradient Background */
 .react-gradient {
   color: #00d8ff;
-  color: linear-gradient(
-    to right,
-    #20232A,#00d8ff
-  );
+  color: linear-gradient(to right, #20232a, #00d8ff);
 }
 
 /* From Ice To Fire CSS Linear Gradient Background */
 .vercel-gradient {
   color: #000000;
-  color: linear-gradient(
-    to right,
-    #ffffff,#000000
-  );
+  color: linear-gradient(to right, #ffffff, #000000);
 }
 
 /* From Ice To Fire CSS Linear Gradient Background */
 .prisma-gradient {
-  color: #0C344B;
-  color: linear-gradient(
-    to right,
-    #FFFFFF,#0C344B
-  );
+  color: #0c344b;
+  color: linear-gradient(to right, #ffffff, #0c344b);
 }
 
 /* From Ice To Fire CSS Linear Gradient Background */
 .sqlserver-gradient {
   color: #cc2927;
-  color: linear-gradient(
-    to right,
-    #ffffff,#cc2927
-  );
+  color: linear-gradient(to right, #ffffff, #cc2927);
 }
 
 /* From Ice To Fire CSS Linear Gradient Background */
 .mysql-gradient {
-  color: #00758F;
-  color: linear-gradient(
-    to right,
-    #F29111,#00758F
-  );
+  color: #00758f;
+  color: linear-gradient(to right, #f29111, #00758f);
 }
 
 /* From Ice To Fire CSS Linear Gradient Background */
 .s3-gradient {
   color: #ff9960;
-  color: linear-gradient(
-    to right,
-    #146eb4,#f78d12
-  );
+  color: linear-gradient(to right, #146eb4, #f78d12);
 }
 /* From Ice To Fire CSS Linear Gradient Background */
 .postgresql-gradient {
   /* color: #00758F; */
-  color: linear-gradient(
-    to right,
-    #F29111,#00758F
-  );
+  color: linear-gradient(to right, #f29111, #00758f);
 }
 /* From Ice To Fire CSS Linear Gradient Background */
 .figma-gradient {
-  color: #0ACF83;
-  color: linear-gradient(
-    to right,
-    #F24E1E,
-    #A259FF,
-    #009688,
-    #F28B82,
-
-  );
+  color: #0acf83;
+  color: linear-gradient(to right, #f24e1e, #a259ff, #009688, #f28b82);
 }
 
 .tailwind-gradient {
-  color: #38BDF8;
-  color: linear-gradient(
-    to right,
-    #38B2AC,#38BDF8
-  );
+  color: #38bdf8;
+  color: linear-gradient(to right, #38b2ac, #38bdf8);
 }
 
 .brand-text {
   color: #000000;
 }
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
+background: linear-gradient(
+  to bottom,
+  hsl(215, 15%, 75%) 0%,
+  hsl(208, 8%, 55%) 36%,
+  hsl(202, 19%, 20%) 100%
+); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */

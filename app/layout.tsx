@@ -34,7 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en' suppressHydrationWarning>
       <body
         className={clsx(
-          'dark:bg-radial bg-powder font-epilogue dark:text-dark-50 ',
+          'font-epilogue dark:text-dark-50 ',
           epilogue.className,
           montserrat.variable
         )}
