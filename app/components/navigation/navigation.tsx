@@ -36,7 +36,7 @@ export function Navigation() {
         </AnimatedLink>
 
         <a
-          className='group bg-[#352d39] text-white text-xs px-3 py-2 flex items-center gap-2 rounded-lg outline-none focus:scale-95 hover:scale-95 active:scale-95 transition cursor-pointer border-black dark:bg-white/10'
+          className='group bg-[#181818]/90 text-white text-xs px-3 py-2 flex items-center gap-2 rounded-lg outline-none focus:scale-95 hover:scale-95 active:scale-95 transition cursor-pointer border-black dark:bg-white/10'
           href='/assets/LarryLy-CV.pdf'
           download
         >
