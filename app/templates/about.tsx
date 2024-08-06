@@ -201,7 +201,7 @@ export const About = () => {
           className={cn(
             'mb-6 self-start md:col-span-full md:col-start-7 md:mb-0 md:w-full xl:col-start-9 relative aspect-square rounded-full w-3/4 opacity-80 mx-auto',
             {
-              'bg-dark-100': theme === 'light',
+              'bg-dark-200': theme === 'light',
               'bg-[#333333]': theme === 'dark',
             }
           )}

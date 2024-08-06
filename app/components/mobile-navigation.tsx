@@ -79,7 +79,7 @@ export function MobileNav() {
         type='button'
         aria-label={isOpen ? 'Close menu' : 'Open menu'}
         onClick={toggle}
-        className='fixed top-8 right-4 z-30 text-dark-100 mix-blend-difference hover:opacity-60 dark:text-white md:hidden'
+        className='fixed top-8 right-4 z-30 text-dark-900 mix-blend-difference hover:opacity-60 dark:text-white md:hidden'
       >
         <svg
           xmlns='http://www.w3.org/2000/svg'

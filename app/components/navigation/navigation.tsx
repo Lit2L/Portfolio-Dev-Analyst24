@@ -18,7 +18,7 @@ export function Navigation() {
       className='container h-20 fixed inset-x-0 top-0 z-50 hidden w-full items-center justify-between md:flex'
     >
       <AnimatedLink href='/#' variants={linkVariants} className=''>
-        <Image src='/public/assets/LarryLogoGreen.png' width={40} height={40} alt='Larry Logo' />
+        <Image src='/assets/LarryLogoGreen.png' width={60} height={60} alt='Larry Logo' />
       </AnimatedLink>
 
       <nav className='flex items-center justify-center gap-x-14 text-lg'>
