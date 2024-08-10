@@ -143,7 +143,7 @@ export const HeroIllustration = () => {
             height={200}
             width={200}
             alt='Hero notification widget'
-            className='absolute left-[2%] -top-20  shadow-xl shadow-sky-600'
+            className='absolute left-[2%] -top-20  shadow-lg shadow-sky-600/30'
           />
         </picture>
         <picture>
@@ -167,7 +167,7 @@ export const HeroIllustration = () => {
             height={300}
             width={300}
             alt='Hero big widget'
-            className='absolute -left-[2%] bottom-0 shadow-xl shadow-red-200'
+            className='absolute -left-[2%] bottom-0 shadow-lg shadow-red-200/30'
           />
         </picture>
         <picture>
@@ -191,7 +191,7 @@ export const HeroIllustration = () => {
             height={300}
             width={300}
             alt='Hero big widget'
-            className='absolute right-0 -top-[9%] shadow-xl shadow-cyan-500'
+            className='absolute right-0 -top-[9%] shadow-lg shadow-cyan-500/30'
           />
         </picture>
         <picture>
@@ -215,7 +215,7 @@ export const HeroIllustration = () => {
             height={300}
             width={300}
             alt='Hero like widget'
-            className='absolute right-[5%] bottom-0 shadow-xl shadow-purple-400'
+            className='absolute right-[5%] bottom-0 shadow-lg shadow-purple-400/30'
           />
         </picture>
         <picture>
@@ -239,7 +239,7 @@ export const HeroIllustration = () => {
             height={300}
             width={300}
             alt='Hero like widget'
-            className='absolute right-[5%] top-1/4 shadow-xl shadow-emerald-400'
+            className='absolute right-[5%] top-1/4 shadow-lg shadow-emerald-400/30'
           />
         </picture>
       </div>
