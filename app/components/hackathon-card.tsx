@@ -26,9 +26,9 @@ export function HackathonCard({
   links,
 }: Props) {
   return (
-    <li className='relative ml-10 py-12'>
-      <div className='absolute -left-16 top-2 flex items-center justify-center bg-white/50 rounded-full'>
-        <Avatar className='border size-12 p-1 m-auto'>
+    <div className='relative ml-10 py-12'>
+      <div className='absolute -left-16 top-2 flex items-center justify-center bg-slate-400/90 dark:bg-slate-400 rounded-full'>
+        <Avatar className='border border-slate-400 dark:border-slate-500 size-12 p-1 m-auto'>
           <AvatarImage src={image} alt={title} className='object-contain' />
           <AvatarFallback>{title[0]}</AvatarFallback>
         </Avatar>
@@ -62,6 +62,6 @@ export function HackathonCard({
           </div>
         )}
       </div>
-    </li>
+    </div>
   )
 }

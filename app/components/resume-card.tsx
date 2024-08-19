@@ -109,8 +109,8 @@ export const ResumeCard = ({
             <span className='justify-end w-full inline-flex gap-x-3 font-sans text-xs'>
               {badges.map((badge, index) => (
                 <Badge
-                  variant='secondary'
-                  className='text-[9px] leading-tight bg-blue-700 tracking-tighter'
+                  variant='default'
+                  className='text-[9px] leading-tight tracking-tighter'
                   key={index}
                 >
                   {badge}

@@ -27,7 +27,7 @@ export const Hero = () => {
               <AnimatedLetters
                 as='h1'
                 text='Larry Ly'
-                className='font-bold w-full text-5xl lg:text-7xl tracking-wide text-center md:text-left dark:text-[#f7f7f7] text-[#352D39]'
+                className='font-bold w-full text-5xl lg:text-7xl tracking-wide text-center md:text-left dark:text-[#f7f7f7] text-slate-700'
                 textVariants={{
                   hidden: { transition: { staggerChildren: 0.015 } },
                   visible: { transition: { staggerChildren: 0.015 } },
@@ -69,7 +69,6 @@ export const Hero = () => {
 
         <HeroIllustration />
       </motion.section>
-      <StarsBackground />
     </section>
   )
 }

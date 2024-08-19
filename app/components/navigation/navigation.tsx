@@ -18,7 +18,7 @@ export function Navigation() {
       className='container h-20 fixed inset-x-0 top-0 z-50 hidden w-full items-center justify-between md:flex'
     >
       <AnimatedLink href='/#' variants={linkVariants} className=''>
-        <Image src='/assets/LarryLogoGreen.png' width={60} height={60} alt='Larry Logo' />
+        <p className='font-karantina'>Larry||_</p>
       </AnimatedLink>
 
       <nav className='flex items-center justify-center gap-x-6 text-xs font-montserrat'>
@@ -36,7 +36,7 @@ export function Navigation() {
         </AnimatedLink>
 
         <a
-          className='group bg-[#181818]/90 text-white text-xs px-3 py-2 flex items-center gap-2 rounded-lg outline-none focus:scale-95 hover:scale-95 active:scale-95 transition cursor-pointer border-black dark:bg-white/10'
+          className='group bg-slate-700 text-white text-xs px-3 py-2 flex items-center gap-2 rounded-lg outline-none focus:scale-95 hover:scale-95 active:scale-95 transition cursor-pointer border-black dark:bg-white/10'
           href='/assets/LarryLy-CV.pdf'
           download
         >
