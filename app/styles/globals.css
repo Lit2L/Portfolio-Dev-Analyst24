@@ -28,8 +28,8 @@
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 206 12% 12%;
+    --foreground: 0 0% 96%;
     --card: 18 10% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
@@ -55,7 +55,7 @@
     @apply border-border;
   }
   body {
-    @apply text-foreground;
+    @apply text-foreground bg-background;
   }
   a,
   button {

@@ -44,17 +44,17 @@ export const ResumeCard = ({
   return (
     <Link
       href={href || '#'}
-      className='block cursor-pointer bg-secondary-foreground/10 rounded-md dark:bg-transparent'
+      className=' cursor-pointer bg-secondary-foreground/10 rounded-md dark:bg-transparent'
       onClick={handleClick}
     >
-      <Card className='flex p-6 font-sans bg-transparent '>
+      <Card className='flex p-6 font-sans bg-transparent border-4'>
         <div className=''>
           <Avatar className='border size-16 bg-white'>
             <AvatarImage src={logoUrl} alt={altText} className='object-contain' />
             <AvatarFallback>{altText[0]}</AvatarFallback>
           </Avatar>
         </div>
-        <div className='flex-grow items-center flex-col group'>
+        <div className='flex items-center flex-col group'>
           <CardHeader>
             <div className='flex items-center justify-between gap-x-2 text-base'>
               <h3 className='inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm'>
@@ -67,9 +67,7 @@ export const ResumeCard = ({
                   )}
                 />
               </h3>
-              <div className='text-xs sm:text-sm tabular-nums text-muted-foreground text-right'>
-                {period}
-              </div>
+              <div className='text-xs text-muted-foreground text-right'>{period}</div>
             </div>
             {subtitle && <div className='font-sans text-xs'>{subtitle}</div>}
           </CardHeader>
@@ -85,7 +83,7 @@ export const ResumeCard = ({
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className='mt-2 text-xs sm:text-sm font-sans'
+              className='mt-2 text-xs  font-sans'
             >
               {description}
               <Separator className='my-3' />
@@ -112,7 +110,7 @@ export const ResumeCard = ({
               {badges.map((badge, index) => (
                 <Badge
                   variant='secondary'
-                  className='align-middle text-xs bg-blue-700 tracking-tighter'
+                  className='text-[9px] leading-tight bg-blue-700 tracking-tighter'
                   key={index}
                 >
                   {badge}

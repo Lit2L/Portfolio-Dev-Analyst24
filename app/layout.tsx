@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
-import { Epilogue, Montserrat } from 'next/font/google'
+import { Epilogue, Karantina, Montserrat } from 'next/font/google'
 import localFont from 'next/font/local'
 import clsx from 'clsx'
 import { Kanit } from 'next/font/google'
@@ -22,6 +22,13 @@ const epilogue = Epilogue({
   display: 'swap',
 })
 
+const karantina = Karantina({
+  subsets: ['latin'],
+  variable: '--font-karantina',
+  display: 'swap',
+  weight: ['400', '300', '700'],
+})
+
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
@@ -38,7 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en' suppressHydrationWarning>
       <body
         className={clsx(
-          'font-epilogue min-h-screen dark:text-dark-50 mx-auto max-w-md md:max-w-5xl ',
+          'font-montserrat min-h-screen dark:text-dark-50 mx-auto max-w-md md:max-w-5xl ',
           epilogue.className,
           montserrat.variable
         )}

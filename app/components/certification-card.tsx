@@ -85,17 +85,6 @@ export const CertificationCard = ({
               {description}
             </motion.div>
           )}
-
-          {title}
-          {badges && (
-            <span className='inline-flex gap-x-1 rounded-xl font-sans text-xs'>
-              {badges.map((badge, index) => (
-                <Badge variant='secondary' className='align-middle text-xs' key={index}>
-                  {badge}
-                </Badge>
-              ))}
-            </span>
-          )}
         </div>
       </Card>
     </Link>

@@ -1,3 +1,4 @@
+import { Karantina } from 'next/font/google'
 import type { Config } from 'tailwindcss'
 
 const config = {
@@ -21,6 +22,11 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+        epilogue: ['Epilogue', 'sans-serif'],
+        karantina: ['Karantina', 'sans-serif'],
+      },
       colors: {
         dark: {
           50: '#EDEDED',

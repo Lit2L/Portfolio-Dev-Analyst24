@@ -40,8 +40,7 @@ export const DATA = {
     { href: '/#', icon: HomeIcon, label: 'Home' },
     { href: '/#about', icon: IconUserCircle, label: 'About' },
     { href: '/#work', icon: IconListCheck, label: 'Work History' },
-    // { href: '/#projects', icon: VscProject, label: 'Projects' },
-    { href: '/#hackathons', icon: IconTrophy, label: 'Hackathons' },
+    { href: '/#hackathons', icon: IconTrophy, label: 'hackathons' },
     { href: '/#certifications', icon: IconCertificate, label: 'Certifications' },
     { href: '/#applications', icon: IconApps, label: 'Applications' },
   ],
@@ -98,8 +97,8 @@ export const DATA = {
       location: 'Irvine, CA',
       title: 'Data Integrations, Key Analyst',
       logoUrl: '/zillow.png',
-      start: 'January 2021',
-      end: 'April 2021',
+      start: 'April 2015',
+      end: 'June 2019',
       description:
         'As a Data Integrations, Key Analyst at Zillow, my role was pivotal in establishing and optimizing the data integrations and transactions department. My involvement included developing a robust database pipeline that successfully processed and integrated data from over 3,000 U.S. counties. This position required extensive experience in data mapping, external API ingestion, data mapping  as well as the mortgage industry as a whole.',
       features: [
@@ -135,8 +134,8 @@ export const DATA = {
       degree: 'Front-end Web UI Frameworks and Tools',
       logoUrl: '/coursera.png',
       features: ['SQL', 'Python', 'Data Cleaning'],
-      start: '2016',
-      end: '2021',
+      start: 'March',
+      end: '2022',
     },
   ],
   projects: [
@@ -285,22 +284,7 @@ export const DATA = {
         {
           title: 'Achievements',
           icon: <Icons.globe className='h-4 w-4' />,
-          href: 'https://devpost.com/software/my6footprint',
-        },
-        {
-          title: 'ML',
-          icon: <Icons.github className='h-4 w-4' />,
-          href: 'https://github.com/Wallet6/my6footprint-machine-learning',
-        },
-        {
-          title: 'iOS',
-          icon: <Icons.github className='h-4 w-4' />,
-          href: 'https://github.com/Wallet6/CarbonWallet',
-        },
-        {
-          title: 'Server',
-          icon: <Icons.github className='h-4 w-4' />,
-          href: 'https://github.com/Wallet6/wallet6-server',
+          href: 'https://zillow.com',
         },
       ],
     },

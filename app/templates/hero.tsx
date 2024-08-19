@@ -5,13 +5,11 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { AnimatedLetters, AnimatedText } from '@/components/animated-text'
 import { HeroIllustration } from '@/components/hero-illustration'
 import { MotionLinkButton } from '@/components/link-button'
+import { StarsBackground } from '@/components/ui/stars-background'
 
 export const Hero = () => {
   return (
-    <section
-      id='intro'
-      className=' shadow-[inset_0_-40px_15px_-10px_#ededed] dark:shadow-[inset_0_-40px_15px_-10px_#171717] md:bg-auto overflow-hidden h-[80vh] pt-24 smooth relative z-0'
-    >
+    <section id='intro' className='md:bg-auto overflow-hidden h-[80vh] pt-24 smooth relative z-0'>
       <motion.section
         variants={{
           hidden: { transition: { staggerChildren: 0.25, delayChildren: 0.25 } },
@@ -71,6 +69,7 @@ export const Hero = () => {
 
         <HeroIllustration />
       </motion.section>
+      <StarsBackground />
     </section>
   )
 }

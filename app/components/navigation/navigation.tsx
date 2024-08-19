@@ -21,18 +21,18 @@ export function Navigation() {
         <Image src='/assets/LarryLogoGreen.png' width={60} height={60} alt='Larry Logo' />
       </AnimatedLink>
 
-      <nav className='flex items-center justify-center gap-x-14 text-lg'>
+      <nav className='flex items-center justify-center gap-x-6 text-xs font-montserrat'>
         <AnimatedLink href='/#about' variants={linkVariants}>
           About
         </AnimatedLink>
         <AnimatedLink href='/#work' variants={linkVariants}>
-          History
+          Work
         </AnimatedLink>
         <AnimatedLink href='/#hackathons' variants={linkVariants}>
-          Accomplishments
+          Hackathons
         </AnimatedLink>
         <AnimatedLink href='/#applications' variants={linkVariants}>
-          Applications
+          My Apps
         </AnimatedLink>
 
         <a
