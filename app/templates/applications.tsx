@@ -10,10 +10,10 @@ import { SectionHeader } from '@/components/section-header'
 import { SectionShell } from '@/components/section-shell'
 import { projects } from '../../projects'
 
-export const Projects = () => {
+export const Applications = () => {
   return (
-    <SectionShell id='projects'>
-      <SectionHeader heading='Projects' />
+    <SectionShell id='applications'>
+      <SectionHeader heading='applications' />
       <motion.section
         variants={{
           visible: { transition: { staggerChildren: 0.25 } },
@@ -27,7 +27,7 @@ export const Projects = () => {
         <AnimatedText
           as='p'
           className='col-span-full text-lg font-semibold leading-relaxed text-dark-600 dark:text-dark-200 md:col-span-6 xl:col-span-8 smooth'
-          text='My Recent Works'
+          text='My Recent Applications'
         />
 
         {/* <MotionLinkButton */}
@@ -86,7 +86,7 @@ export const Projects = () => {
           whileInView='visible'
           exit='hidden'
           viewport={{ once: true }}
-          className='relative grid flex-1 grid-cols-12 gap-y-12 md:gap-x-8 md:gap-y-16 lg:gap-x-16 smooth'
+          className='relative grid flex-1 grid-cols-12 gap-y-12 md:gap-x-6  smooth '
         >
           {projects.map(project => (
             <ProjectItem key={project.id} project={project} />

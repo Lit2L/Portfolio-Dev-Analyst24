@@ -4,8 +4,13 @@ import { ContactForm } from '@/components/contact-form'
 import { About } from '@/templates/about'
 import { ContactShell } from '@/templates/contact-shell'
 import { Hero } from '@/templates/hero'
-import { Projects } from '@/templates/projects'
+import { Applications } from '@/templates/applications'
 import { useEffect } from 'react'
+import { Work } from './templates/work'
+import { Hackathons } from './templates/hackathons'
+import { Certifications } from './templates/certifications'
+import { StarsBackground } from './components/ui/stars-background'
+import { ShootingStars } from './components/ui/shooting-stars'
 
 export default function Index() {
   useEffect(() => {
@@ -16,15 +21,14 @@ export default function Index() {
   }, [])
 
   return (
-    <main className='scrollbar-thin  scrollbar-thumb-900 scrollbar-track-gray-100'>
-      <div className='mt-12'>
-        <Hero />
-      </div>
-      <Projects />
+    <main className='scrollbar-thin scrollbar-thumb-900 scrollbar-track-gray-100 max-w-2xl mx-auto flex flex-col '>
+      <Hero />
+
       <About />
-      <ContactShell>
-        <ContactForm />
-      </ContactShell>
+      <Work />
+      <Hackathons />
+      <Certifications />
+      <Applications />
     </main>
   )
 }

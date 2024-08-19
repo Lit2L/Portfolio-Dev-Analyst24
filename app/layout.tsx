@@ -11,6 +11,10 @@ import './styles/globals.css'
 import './styles/tailwind.css'
 import './styles/gradients.css'
 import { ThemeProvider } from '@/components/theme-provider'
+import { ShootingStars } from './components/ui/shooting-stars'
+import { StarsBackground } from './components/ui/stars-background'
+import Navbar from './components/navbar'
+import { TooltipProvider } from './components/ui/tooltip'
 
 const epilogue = Epilogue({
   subsets: ['latin'],
@@ -34,19 +38,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en' suppressHydrationWarning>
       <body
         className={clsx(
-          'font-epilogue dark:text-dark-50 ',
+          'font-epilogue min-h-screen dark:text-dark-50 mx-auto max-w-md md:max-w-5xl ',
           epilogue.className,
           montserrat.variable
         )}
       >
         <ThemeProvider attribute='class' defaultTheme='dark' enableSystem disableTransitionOnChange>
-          <Navigation />
-          <MobileNav />
-          <div className=''>{children}</div>
-          <Analytics />
-          <Footer />
+          <TooltipProvider delayDuration={0}>
+            <Navigation />
+            <MobileNav />
+            <Navbar />
+            <div className=''>{children}</div>
+            <Analytics />
+            <Footer />
 
-          <Analytics />
+            <Analytics />
+          </TooltipProvider>
         </ThemeProvider>
       </body>
     </html>

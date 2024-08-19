@@ -96,8 +96,8 @@ export const HeroIllustration = () => {
   if (!mounted) return null
 
   return (
-    <section className='z-50'>
-      <div className='z-[-10] absolute scale-[0.6] top-28 right-[50%] translate-x-[50%] md:translate-x-0 md:scale-[0.8] md:top-10 md:-right-40 lg:-right-36 lg:-top-10 xl:-top-10 xl:-right-20 2xl:-right-16 smooth '>
+    <section className='z-50 w-1/2'>
+      <div className='z-[-10] hidden md:flex  scale-[0.6] top-28 right-[50%] md:scale-[0.8] md:top-10 md:-right-40 lg:-right-36 lg:-top-10 xl:-top-0 xl:-right-20 2xl:-right-16 smooth '>
         <picture>
           <source type='image/webp' srcSet={image.base.webp} />
           <source type='image/png' srcSet={image.base.png} />
@@ -116,10 +116,10 @@ export const HeroIllustration = () => {
             }}
             priority
             src={image.base.png}
-            width={800}
-            height={706}
+            width={400}
+            height={406}
             alt='Hero illustration'
-            className='object-cover w-full min-w-[693px] h-full min-h-[706px]'
+            className='object-cover w-full min-w-[500px] h-full min-h-[500px] max-w-[500px] max-h-[600px]'
           />
         </picture>
         <picture>
@@ -131,7 +131,7 @@ export const HeroIllustration = () => {
             animate='visible'
             exit='hidden'
             transition={{
-              duration: 0.75,
+              duration: 0.5,
               ease: [0.455, 0.03, 0.515, 0.955],
               delay: 1,
               repeat: Number.POSITIVE_INFINITY,
@@ -140,10 +140,10 @@ export const HeroIllustration = () => {
             }}
             priority
             src={image.profileWidget.png}
-            height={200}
-            width={200}
+            height={75}
+            width={75}
             alt='Hero notification widget'
-            className='absolute left-[2%] -top-20  shadow-lg shadow-sky-600/30'
+            className='absolute left-1/3 top-1/4 scale-75 shadow-lg shadow-sky-600/30'
           />
         </picture>
         <picture>
@@ -164,10 +164,10 @@ export const HeroIllustration = () => {
             }}
             src={image.louvairWidget.png}
             loading='lazy'
-            height={300}
-            width={300}
+            height={100}
+            width={100}
             alt='Hero big widget'
-            className='absolute -left-[2%] bottom-0 shadow-lg shadow-red-200/30'
+            className='absolute left-[35%] bottom-[15%] scale-75 shadow-lg shadow-red-200/30'
           />
         </picture>
         <picture>
@@ -179,7 +179,7 @@ export const HeroIllustration = () => {
             animate='visible'
             exit='hidden'
             transition={{
-              duration: 0.75,
+              duration: 0.5,
               ease: [0.455, 0.03, 0.515, 0.955],
               delay: 8,
               repeat: Number.POSITIVE_INFINITY,
@@ -188,10 +188,10 @@ export const HeroIllustration = () => {
             }}
             src={image.iyamWidget.png}
             loading='lazy'
-            height={300}
-            width={300}
+            height={100}
+            width={100}
             alt='Hero big widget'
-            className='absolute right-0 -top-[9%] shadow-lg shadow-cyan-500/30'
+            className='absolute right-[-5%] top-[10%] shadow-lg shadow-cyan-500/30'
           />
         </picture>
         <picture>
@@ -203,7 +203,7 @@ export const HeroIllustration = () => {
             animate='visible'
             exit='hidden'
             transition={{
-              duration: 0.75,
+              duration: 0.5,
               ease: [0.455, 0.03, 0.515, 0.955],
               delay: 14,
               repeat: Number.POSITIVE_INFINITY,
@@ -212,10 +212,10 @@ export const HeroIllustration = () => {
             }}
             src={image.hippoWidget.png}
             loading='lazy'
-            height={300}
-            width={300}
+            height={100}
+            width={100}
             alt='Hero like widget'
-            className='absolute right-[5%] bottom-0 shadow-lg shadow-purple-400/30'
+            className='absolute right-[-5%] bottom-[15%] shadow-lg shadow-purple-400/30'
           />
         </picture>
         <picture>
@@ -227,7 +227,7 @@ export const HeroIllustration = () => {
             animate='visible'
             exit='hidden'
             transition={{
-              duration: 0.75,
+              duration: 0.5,
               ease: [0.455, 0.03, 0.515, 0.955],
               delay: 16,
               repeat: Number.POSITIVE_INFINITY,
@@ -236,10 +236,10 @@ export const HeroIllustration = () => {
             }}
             src={image.nerdsWidget.png}
             loading='lazy'
-            height={300}
-            width={300}
+            height={100}
+            width={100}
             alt='Hero like widget'
-            className='absolute right-[5%] top-1/4 shadow-lg shadow-emerald-400/30'
+            className='absolute right-[-5%] top-1/3 shadow-lg shadow-emerald-400/30'
           />
         </picture>
       </div>

@@ -38,7 +38,7 @@ export const ProjectItem = memo(({ project, ...props }: ProjectItemProps) => {
     <Link
       href={link}
       className={clsx(
-        'col-span-12 flex flex-col md:col-span-6 xl:col-span-4',
+        'col-span-12 flex flex-col md:col-span-6',
         props.className && props.className
       )}
     >

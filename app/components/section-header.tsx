@@ -59,7 +59,7 @@ export const SectionHeader = forwardRef<HTMLElement, SectionHeaderProps>(
     <motion.header
       ref={ref}
       {...props}
-      className='flex items-center'
+      className='flex items-center py-16'
       variants={parentVariants}
       initial='hidden'
       whileInView='visible'
@@ -67,13 +67,13 @@ export const SectionHeader = forwardRef<HTMLElement, SectionHeaderProps>(
     >
       <motion.h2
         variants={headerVariants}
-        className='w-24 text-md uppercase tracking-wider text-[#352D39] dark:text-dark-200 font-bold'
+        className='w-32 text-left text-md uppercase tracking-wider text-slate-600 dark:text-blue-400 font-bold font-sans'
       >
         {heading}
       </motion.h2>
       <motion.div
         variants={lineVariants}
-        className='h-[4px] flex-1 bg-[#352D39] transition-all duration-200 ease-in-out dark:bg-dark-400'
+        className='h-[3px] flex-1 bg-slate-500 dark:bg-blue-400 transition-all duration-200 ease-in-out '
       />
     </motion.header>
   )

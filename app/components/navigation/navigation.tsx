@@ -22,17 +22,17 @@ export function Navigation() {
       </AnimatedLink>
 
       <nav className='flex items-center justify-center gap-x-14 text-lg'>
-        <AnimatedLink href='/#intro' variants={linkVariants}>
-          Introduction
-        </AnimatedLink>
-        <AnimatedLink href='/#projects' variants={linkVariants}>
-          Projects
-        </AnimatedLink>
         <AnimatedLink href='/#about' variants={linkVariants}>
           About
         </AnimatedLink>
-        <AnimatedLink href='/#contact' variants={linkVariants}>
-          Contact
+        <AnimatedLink href='/#work' variants={linkVariants}>
+          History
+        </AnimatedLink>
+        <AnimatedLink href='/#hackathons' variants={linkVariants}>
+          Accomplishments
+        </AnimatedLink>
+        <AnimatedLink href='/#applications' variants={linkVariants}>
+          Applications
         </AnimatedLink>
 
         <a
